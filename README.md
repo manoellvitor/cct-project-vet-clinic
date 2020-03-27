@@ -1,8 +1,1 @@
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
-# vetClinicCA
+-- Vet Clinic CA - CCT College --
