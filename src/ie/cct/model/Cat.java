@@ -14,7 +14,7 @@ public class Cat extends Animal{
 	//	Constructor
 	public Cat(String name, int age, String medicalCondition) {
 		super(name, age, medicalCondition);
-		System.out.println("NEW DOG");
+		System.out.println("NEW CAT");
 		
 		//	Call the internal method
 		generateAnimals();

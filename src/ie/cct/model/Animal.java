@@ -55,5 +55,7 @@ public abstract class Animal implements Helper{
 		System.out.println("NAME: " + name +
 						   "\nDOG AGE: " + age +
 						   "\nMEDICAL CONDITION: " + medicalCondition);
+
+		System.out.println("-----------------------------------");
 	}
 }
