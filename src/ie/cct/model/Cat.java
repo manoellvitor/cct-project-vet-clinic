@@ -10,9 +10,9 @@ import ie.cct.helper.Helper;
  *
  */
 
-public class Dog extends Animal{
+public class Cat extends Animal{
 	//	Constructor
-	public Dog(String name, int age, String medicalCondition) {
+	public Cat(String name, int age, String medicalCondition) {
 		super(name, age, medicalCondition);
 		System.out.println("New DOG");
 		
