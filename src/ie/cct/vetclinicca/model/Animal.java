@@ -1,4 +1,4 @@
-package ie.cct.vetclinicca;
+package ie.cct.vetclinicca.model;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -8,10 +8,6 @@ package ie.cct.vetclinicca;
  *
  */
 
-public class Main {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+public abstract class Animal {
 
 }
