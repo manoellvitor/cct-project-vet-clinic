@@ -1,10 +1,6 @@
 package ie.cct.helper;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.LinkedList;
+
 import java.util.List;
 
 /**
@@ -14,25 +10,13 @@ import java.util.List;
  * @gitHub https://github.com/manoellvitor/vetClinicCA
  *
  */
-public class Helper {
+public interface Helper {
 	
 	//	Function to generate the Animals names
-	public static List<String[]> generateAnimalName() {
-		String file = "/home/manoel/eclipse-workspace/vetClinicCa/vetClinicCA/src/resources/petNames.csv";
-		List<String[]> names = new LinkedList<String[]>();
-		String name;
-		try {
-			BufferedReader br = new BufferedReader(new FileReader(file));
-			while ((name = br.readLine()) != null) {
-				names.addAll(name);
-			 }
-		} catch (FileNotFoundException e) {
-			System.out.println("ERROR READING THE FILE, CHECK YOUR FILE: " + file);
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public static List<String[]> generateAnimals(String file) {
+		
+		
+		
+		return null;		
 	}
-
 }

@@ -1,5 +1,7 @@
 package ie.cct.model;
 
+import ie.cct.helper.Helper;
+
 /**
  * @author Manoel Vitor Nascimento Lopes
  * @college CCT - College
@@ -8,11 +10,11 @@ package ie.cct.model;
  *
  */
 
-public abstract class Animal {
+public abstract class Animal implements Helper{
 	//	List of common Attributes for AdminStaff
-	private String name;
-	private int age;
-	private String medicalCondition;
+	protected String name;
+	protected int age;
+	protected String medicalCondition;
 
 	//	Constructor
 	public Animal(String name, int age, String medicalCondition) {
@@ -20,7 +22,6 @@ public abstract class Animal {
 		this.age = age;
 		this.medicalCondition = medicalCondition;
 	}
-
 
 	//	Getters and Setters
 	public String getName() {
@@ -38,7 +39,7 @@ public abstract class Animal {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
+	
 	public String getMedicalCondition() {
 		return medicalCondition;
 	}
@@ -46,7 +47,13 @@ public abstract class Animal {
 	public void setMedicalCondition(String medicalCondition) {
 		this.medicalCondition = medicalCondition;
 	}
-	
-	// List of common methods for Animal
 
+	// List of common methods for Animal
+	public abstract void generateAnimals();
+	
+	public void showInfo() {
+		System.out.println("NAME: " + name +
+						   "\nDOG AGE: " + age +
+						   "\nMEDICAL CONDITION: " + medicalCondition);
+	}
 }
