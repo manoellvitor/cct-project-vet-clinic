@@ -1,4 +1,4 @@
-package ie.cct.vetclinicca.model;
+package ie.cct.helper;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -7,7 +7,11 @@ package ie.cct.vetclinicca.model;
  * @gitHub https://github.com/manoellvitor/vetClinicCA
  *
  */
-
-public abstract class Animal {
+public class Helper {
+	
+	//	Function to generate the Animals names
+	public void generateAnimalName() {
+		
+	}
 
 }

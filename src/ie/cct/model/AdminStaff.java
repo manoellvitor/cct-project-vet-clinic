@@ -1,4 +1,4 @@
-package ie.cct.vetclinicca.model;
+package ie.cct.model;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -9,23 +9,20 @@ package ie.cct.vetclinicca.model;
  */
 public abstract class AdminStaff {
 	//	List of common Attributes for AdminStaff
-	
 	private String firstName;
 	private String surName;
 	private static int staffNumber = 0000;
 	private int salaryLevel;
 
-	
+
 	//	Constructor
-	
 	public AdminStaff(String firstName, String surName, int salaryLevel) {
 		this.firstName = firstName;
 		this.surName = surName;
 		this.salaryLevel = salaryLevel;
 	}
-	
+
 	//	Getters and Setters
-	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -51,10 +48,10 @@ public abstract class AdminStaff {
 	public void setSlaryLevel(int slaryLevel) {
 		this.salaryLevel = slaryLevel;
 	}
-	
-	
+
+
 	//	List of common methods for AdminStaff
-	
-	
+
+
 
 }
