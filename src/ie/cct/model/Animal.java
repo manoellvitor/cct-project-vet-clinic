@@ -64,7 +64,7 @@ public abstract class Animal{
 	public void showInfo() {
 		System.out.println("ANIMAL KIND: "	+ animalKind + 
 						   "\nNAME: " + name +
-						   "\nDOG AGE: " + age +
+						   "\nPET AGE: " + age +
 						   "\nMEDICAL CONDITION: " + medicalCondition);
 	}
 }

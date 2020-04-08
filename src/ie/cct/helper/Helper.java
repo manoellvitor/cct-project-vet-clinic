@@ -35,8 +35,6 @@ public class Helper {
 				String[] dataRecords = dataRow.split(",");
 				data.add(dataRecords);
 			}
-
-
 		} catch (FileNotFoundException e) {
 			System.out.println("COULD NOT FIND FILE");
 			e.printStackTrace();
@@ -46,8 +44,8 @@ public class Helper {
 		}
 		return data;
 	}
-	
-	
+
+
 	//	Function to generate Animals
 	public static void startAnimals() {
 		//		List of Animals
@@ -80,10 +78,10 @@ public class Helper {
 				System.out.println("ERROR READING ANIMAL KIND");
 			}
 		}
-		
+
 		showAnimals(animals);
 	}
-	
+
 	//	Function to show Animals
 	public static List<String[]> showAnimals(List<Animal> animals) {
 		for(Animal anim : animals) {
@@ -92,5 +90,7 @@ public class Helper {
 		}
 		return null;
 	}
+
+
 
 }

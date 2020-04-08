@@ -1,10 +1,6 @@
 package ie.cct.vetclinicca;
 
 import ie.cct.helper.Helper;
-//import ie.cct.model.Bird;
-//import ie.cct.model.Cat;
-//import ie.cct.model.Horse;
-//import ie.cct.model.Rabbit;
 
 /**
  * @author Manoel Vitor Nascimento Lopes

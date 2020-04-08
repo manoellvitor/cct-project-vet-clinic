@@ -34,8 +34,8 @@ ARGUS,Anemia Due to Deformed Red Blood Cells,Dog
 ARIES,Anemia Due to Enlarged Blood Cells,Dog
 ARMANTI,Anemia Due to Iron Deficiency,Dog
 ARNIE,Anemia Related to the Immune System,Dog
-ARROW,Anemia, Nonregenerative,Dog
-ASHES,Anemia, Regenerative,Dog
+ARROW,Anemia,Dog
+ASHES,Anemia,Dog
 ASHLEY,Antibiotic-resistant Bacterial Infections,Dog
 ASTRO,Antibiotic-Resistant Infections,Dog
 ATHENA,Antibodies that Attack Blood Cells at Lower Temperatures,Dog
@@ -51,12 +51,12 @@ BABBLES,Artery Inflammation,Dog
 BABE,Arthritis (Septic),Dog
 BABY,Arthritis of Multiple Joints,Dog
 BABY-DOLL,Aspirin Poisoning,Dog
-BABYKINS,Atopic Dermatitis: Causes, Symptoms, and Treatments,Dog
+BABYKINS,Atopic Dermatitis: Causes,Dog
 BACCHUS,Bacterial Infection (Actinomycosis),Dog
 BAILEY,Bacterial Infection (Campylobacteriosis),Dog
 BAM-BAM,Bacterial Infection (Leptospirosis),Dog
 BAMBI,Bacterial Infection (Metritis) of the Uterus,Dog
-BANDIT,Bacterial Infection (Mycoplasma, Ureaplasma, Acoleplasma),Dog
+BANDIT,Bacterial Infection (Mycoplasma,Dog
 BANJO,Bacterial Infection (Nocardiosis),Dog
 BARBIE,Bacterial Infection (Pyelonephritis) of the Kidneys,Dog
 BARCLAY,Bacterial Infection (Streptococcus),Dog
@@ -70,7 +70,7 @@ BART,Bile Duct Cancer,Dog
 BASIL,Bile Duct Obstruction,Dog
 BAXTER,Birth Difficulties,Dog
 BB,Black Widow Spider Bite Poisoning,Dog
-BEAMER,Black, Tarry Feces Due to Presence of Blood,Dog
+BEAMER,Black,Dog
 BEANIE,Bladder Inflammation with Polyps,Dog
 BEANS,Bleeding Disorder,Dog
 BEAR,Bleeding of the Retina in the Eye,Dog
@@ -97,7 +97,7 @@ BILLIE,Bone Marrow Cancer (Myeloma),Dog
 BILLY,Bone Overgrowth,Dog
 BINGO,Botflies (Maggots),Dog
 BINKY,Botulism,Dog
-BIRDIE,Brain and Spinal Cord Inflammation (Meningoencephalomyelitis, Eosinophilic),Dog
+BIRDIE,Brain and Spinal Cord Inflammation (Meningoencephalomyelitis,Dog
 BIRDY,Brain and Spinal Cord Inflammation,Dog
 BISCUIT,Brain Cell Degeneration,Dog
 BISHOP,Brain Disorder Due to Liver Disease,Dog
@@ -124,7 +124,7 @@ BOGEY,Cancer of the Blood Vessel Cells,Dog
 BONES,Cancerous and Non-Cancerous Growths in a  Mouth,Dog
 BONGO,Cancerous Lymphoid Cells in the Lungs of ,Dog
 BONNIE,Canine Coronavirus Infection,Dog
-BOO,Canine Herpesvirus Causes, Diagnosis, and Treatment,Dog
+BOO,Canine Herpesvirus Causes,Dog
 BOO-BOO,Capillariasis,Dog
 BOOKER,Carbon Monoxide Poisoning,Dog
 BOOMER,Carcinoid Cancer,Dog
@@ -138,7 +138,7 @@ BOSCO,Chagas Disease,Dog
 BOSLEY,Chemical Imbalance of Urine,Dog
 BOSS,Chest Bone Deformity,Dog
 BOY,Chocolate Poisoning,Dog
-BOZLEY,Chronic Inflammation of the Anus, Rectum or Perineum Region,Dog
+BOZLEY,Chronic Inflammation of the Anus,Dog
 BRADLEY,Chronic Inflammation of the Bronchi,Dog
 BRADY,Chronic Vomiting,Dog
 BRAGGS,Cirrhosis and Fibrosis of the Liver,Dog
@@ -194,11 +194,11 @@ CALI,Does Your Dog Have a Snoring Problem?,Dog
 CALLIE,Does Your Dog Have Asthma?,Dog
 CALVIN,Dog Ear Infection - Symptoms and Treatments,Dog
 CAMEO,Dog Abdominal Cavity Inflammation - Dog Peritoneal Cavity,Dog
-CAMILLE,Dog Dementia: Symptoms, Causes, Treatment and Life Expectancy,Dog
+CAMILLE,Dog Dementia: Symptoms,Dog
 CANDY,Dog Diarrhea Treatment And Cures - Diarrhea (Antibiotic-Responsive),Dog
 CAPONE,Dog Flu,Dog
-CAPTAIN,Dog Mouth Cancer: Symptoms, Treatment and Life Expectancy,Dog
-CARLEY,Dog Vomit: Types, Causes, and When to Call the Vet,Cat
+CAPTAIN,Dog Mouth Cancer: Symptoms,Dog
+CARLEY,Dog Vomit: Types,Dog
 CASEY,Dog Wheezing: Causes and Treatment Options,Cat
 CASPER, and Motion Sickness,Cat
 CASSIE,Droopy Eye,Cat
@@ -289,7 +289,7 @@ CUTIE,Fungal Infection (Pneumocystosis) of the Lung,Cat
 CUTIE-PIE,Fungal Infection (Rhinosporidiosis),Cat
 CYRUS,Fungal Infection (Yeast),Cat
 DAFFY,Fungal Infection of the Lower Urinary Tract,Cat
-DAISEY-MAE,Fungal Toxicosis Related To Aspergillus flavus, A,Cat
+DAISEY-MAE,Fungal Toxicosis Related To Aspergillus flavus,Cat
 DAISY,Fungal Toxicosis Related to Fusarium Fungus,Cat
 DAKOTA,Gallbladder and Bile Duct Inflammation,Cat
 DALLAS,Gallbladder Obstruction,Cat
@@ -309,7 +309,7 @@ DESTINI,Hair Loss,Cat
 DEWEY,Hardening and Blockage of the Arteries,Cat
 DEXTER,Head Pressing,Cat
 DHARMA,Head Shaking: When to Worry,Cat
-DIAMOND,Head Tilt, Disorientation,Cat
+DIAMOND,Head Tilt,Cat
 DICKENS,Hearing Loss,Cat
 DIEGO,Heart (Aortic) Blood Clot,Cat
 DIESEL,Heart (Aortic) Valve Narrowing,Cat
@@ -330,8 +330,8 @@ DOOGIE,Heart Defect (Congenital),Cat
 DOTS,Heart Disease (Hypertrophic Cardiomyopathy),Cat
 DOTTIE,Heart Disease of the Sinus Node,Cat
 DOZER,Heart Failure Due to Valve Defect,Cat
-DRAGSTER,Heart Failure, Congestive (Left-sided),Cat
-DREAMER,Heart Failure, Congestive (Right-sided),Cat
+DRAGSTER,Heart Failure,Cat
+DREAMER,Heart Failure,Cat
 DUCHESS,Heart Impulse Block,Cat
 DUDE,Heart Inflammation (Myocarditis),Cat
 DUDLEY,Heart Medicine Poisoning,Cat
@@ -342,14 +342,14 @@ DUNN,Heart Tumors (Myocardial),Cat
 DUSTY,Heart Valve Infection (Infective Endocarditis),Cat
 DUTCHES,Heart Valve Malformation,Cat
 DUTCHESS,Heart Valve Narrowing (Mitral and Tricuspid),Cat
-DYLAN,Heartworm Disease: Symptoms, Cause, Types, Treatment and Prevention,Cat
+DYLAN,Heartworm Disease: Symptoms,Cat
 EARL,Heat Stroke and Hyperthermia,Cat
 EBONY,Hematoma on ,Cat
 ECHO,Hemoglobin and Myoglobin in Urine,Cat
 EDDIE,Hemorrhage of the Lung,Cat
 EDDY,Hepatozoonosis (Tick-Borne Disease),Cat
 EDGAR,Hereditary Muscle Disease (Non-inflammatory Myopathy) in Labrador Retrievers,Cat
-EDSEL,Hereditary, Non-Inflammatory Muscular Disease,Cat
+EDSEL,Hereditary,Cat
 EIFEL,Hernia (Diaphragmatic),Cat
 EINSTEIN,Hernia (Hiatal),Cat
 ELLIE,Hernia (Inguinal),Cat
@@ -362,7 +362,7 @@ EMILY,High Cholesterol,Cat
 EMMA,High Level of Plasma Proteins in the Blood of ,Cat
 EMMY,High Levels of Blood Nitrogen,Cat
 ERIN,Hip Dysplasia,Cat
-ERNIE,Hives: Causes, Symptoms and Treatment Options,Cat
+ERNIE,Hives: Causes,Cat
 EVA,Hole in the Trachea,Cat
 FAITH,Hookworms,Cat
 FANCY,Hormone Replacement Poisoning,Cat
@@ -399,7 +399,7 @@ FRISCO,Inflammation of the Esophagus,Cat
 FRISKY,Inflammation of the Middle Ear and External Ear Canal,Cat
 FRITZ,Inflammation of the Pancreas,Cat
 FRODO,Inflammation of the Skin Blood Vessels,Rabbit
-FROSTY,Inflammation of the Skin, Muscle, and Blood Vessels,Rabbit
+FROSTY,Inflammation of the Skin,Rabbit
 FURBALL,Inflammation of the Soft Tissues in the Mouth,Rabbit
 FUZZY,Inflammation of the Superficial Veins,Rabbit
 GABBY,Inflammatory Bowel Disease (IBD),Rabbit
@@ -430,8 +430,8 @@ GORDON,Irregular Heartbeat,Rabbit
 GRACE,Irritable Bowel Syndrome,Rabbit
 GRACE,Is Dry Nose a Sign of Illness?,Rabbit
 GRACIE,Is Your Pet’s Excessive Shedding a Sign of Illness?,Rabbit
-GRACIE,Itchiness, Desire to Scratch, Chew or Lick Causing Inflamed Skin,Rabbit
-GRADY,Jumping, Chewing, Playbiting, and Other Destructive Behavior Problems in Puppies, Young ,Rabbit
+GRACIE,Itchiness,Rabbit
+GRADY,Jumping,Rabbit
 GREENIE,Jawbone Enlargement,Rabbit
 GRETA,Joint Cancer (Synovial Sarcoma),Rabbit
 GRETCHEN,Joint Cartilage Erosion,Rabbit
@@ -463,7 +463,7 @@ HAPPYT,Leukemia (Acute),Rabbit
 HARDY,Leukemia (Chronic),Rabbit
 HARLEY,Lice,Rabbit
 HARPO,Liver and Spleen Cancer (Hemangiosarcoma),Rabbit
-HARRISON,Liver Cancer: Symptoms, Treatment and Life Expectancy,Rabbit
+HARRISON,Liver Cancer: Symptoms,Rabbit
 HARRY,Liver Disease (Copper Storage),Rabbit
 HARVEY,Liver Disease,Rabbit
 HEATHER,Liver Failure (Acute),Rabbit
@@ -498,7 +498,7 @@ ITSY-BITSY,Lungworms,Rabbit
 IVORY,Lyme Disease,Rabbit
 IVY,Lymph Node Inflammation (Lymphadenitis),Rabbit
 IZZY,Lymph Node Inflammation (Lymphadenopathy),Rabbit
-JACK,Lymph Node Inflammation, Intestinal Tract (Lymphangieasia),Rabbit
+JACK,Lymph Node Inflammation,Rabbit
 JACKIE,Lymphoma,Rabbit
 JACKPOT,Mad Itch Pseudorabies Virus Infection,Rabbit
 JACKSON,Magnesium Deficiency,Rabbit
@@ -506,7 +506,7 @@ JADE,Masculinizing Sex Hormone Deficiency,Rabbit
 JAGGER,Mass Protrusion from the Vaginal Area,Rabbit
 JAGS,Mast Cell Tumor (Mastocytoma),Rabbit
 JAGUAR,Maternal Behavior Problems in Female ,Rabbit
-JAKE,Meningitis, Meningoencephalitis, Meningomyelitis,Rabbit
+JAKE,Meningitis,Rabbit
 JAMIE,Mesothelioma,Rabbit
 JASMINE,Metabolic Enzyme Deficiency,Rabbit
 JASPER,Metabolic Muscle Disease without Inflammation,Rabbit
@@ -528,7 +528,7 @@ JET,Muscle Contraction Disease (Myoclonus),Rabbit
 JETHRO,Muscle Cramps in Scottish Terriers,Rabbit
 JETT,Muscle Tear,Rabbit
 JETTA,Mushroom Poisoning,Rabbit
-JEWEL,Mushroom, Mold, Yeast Poisoning,Rabbit
+JEWEL,Mushroom,Rabbit
 JEWELS,Myelin Deficiency,Rabbit
 JIMMUY,Myeloproliferative Disorders,Rabbit
 JINGLES,Narcolepsy and Cataplexy,Rabbit
@@ -554,7 +554,7 @@ KALLIE,Nose Cancer (Adenocarcinoma),Rabbit
 KANE,Nose Cancer (Chondrosarcoma),Rabbit
 KARMA,Nose Cancer (Fibrosarcoma),Rabbit
 KASEY,Nose Pad Cancer (Squamous Cell Carcinoma),Rabbit
-KATIE,Obesity: Symptoms, Causes and What to Do About It,Rabbit
+KATIE,Obesity: Symptoms,Rabbit
 KATO,Optic Nerve Swelling,Rabbit
 KATZ,Osteochondritis Dissecans (OCD),Rabbit
 KAYLA,Out-of-place Urethral Lining,Rabbit
@@ -562,7 +562,7 @@ KC,Ovarian Tumors,Rabbit
 KEESHA,Overproduction of Estrogen,Rabbit
 KELLIE,Overproduction of Red Blood Cells,Rabbit
 KELLY,Overproduction of White Blood Cells in the Bone Marrow,Rabbit
-KELSEY,Pain (Acute, Chronic and Postoperative),Rabbit
+KELSEY,Pain (Acute,Rabbit
 KENYA,Painful Abdomen,Rabbit
 KERRY,Painful and Frequent Urination,Rabbit
 KIBBLES,Pancreatic Cancer (Adenocarcinoma),Rabbit
@@ -677,7 +677,7 @@ MIA,Skin Disease (Canine Seborrhea),Horse
 MIASY,Skin Disease (Dermatophilosis),Horse
 MICHAEL,Skin Disease Caused by Licking,Horse
 MICKEY,Skin Disease Due to Food Allergies,Horse
-MIDNIGHT,Skin Disease, Autoimmune (Pemphigus),Horse
+MIDNIGHT,Skin Disease,Horse
 MIKEY,Skin Diseases from Allergies,Horse
 MIKO,Skin Infections and Loss of Skin Color Disorders,Horse
 MILES,Skin Inflammation on the Paws,Horse
@@ -690,7 +690,7 @@ MING,Skin Ulcers,Horse
 MINI,Skull and Spinal Cord Abnormalities,Horse
 MINNIE,Small Sized Testes,Horse
 MISCHIEF,Smoke Inhalation,Horse
-MISHA,Snail, Slug Bait Poisoning,Horse
+MISHA,Snail,Horse
 MISS KITTY,Sodium Deficiency,Horse
 MISS PRISS,Soft Tissue Cancer (Rhabdomyosarcoma),Horse
 MISSIE,Spasm of the Rear Legs,Horse
@@ -703,7 +703,7 @@ MITZI,Spinal Cord Development Disorders,Horse
 MITZY,Spinal Cord Disease,Horse
 MO,Spinal Cord Disorder Caused by Blocked Blood Vessel,Horse
 MOCHA,Spine Degeneration,Horse
-MOJO,Stained, Discolored Teeth,Horse
+MOJO,Stained,Horse
 MOLLIE,Stalled Labor and Delivery Problems,Horse
 MOLLY,Staph Infection,Horse
 MONA,Stem Cell Disorders Due to Abnormal Development and Maturation,Horse
@@ -717,7 +717,7 @@ MOOCHIE,Stomach Flu with Bloody Diarrhea,Horse
 MOOKIE,Stomach Infection with Helicobacter,Horse
 MOONSHINE,Stomach Inflammation (Atrophic),Horse
 MOOSE,Stomach Worm Infection (Physalopterosis),Horse
-MORGAN,Stretchy, Saggy, Painful Skin,Horse
+MORGAN,Stretchy,Horse
 MOSES,Stroke,Horse
 MOUSE,Stupor and Coma,Horse
 MR KITTY,Swallowing Difficulties,Horse
@@ -753,10 +753,10 @@ NIKI,Tooth Dislocation or Sudden Loss,Horse
 NIKITA,Tooth Enamel Malformation,Horse
 NIKKI,Tooth Fracture,Horse
 NIKO,Torn Knee Ligament,Horse
-NINA,Toxicity from Gum, Candy, and Toothpaste,Horse
+NINA,Toxicity from Gum,Horse
 NITRO,Toxoplasmosis,Horse
 NOBEL,Transitional Cell Carcinoma of the Urinary Tract,Horse
-NOEL,Tremors and Seizures: Causes, Diagnosis, and Treatment,Horse
+NOEL,Tremors and Seizures: Causes,Horse
 NONA,Tumor of the Eye,Horse
 NOODLES,Tumor of the Meninges,Horse
 NORTON,Tumor of the Nerves,Horse
@@ -778,7 +778,7 @@ OREO,Urethral Shaft Abnormality,Horse
 OSCAR,Urinary Bladder Cancer (Rhabdomyosarcoma),Horse
 OTIS,Urinary Tract / Kidney Stones (Cystine),Horse
 OTTO,Urinary Tract / Kidney Stones (Calcium Phosphate),Horse
-OZ,Urinary Tract Infection, Lower (Bacterial),Horse
+OZ,Urinary Tract Infection,Horse
 OZZIE,Urinary Tract Obstruction,Horse
 OZZY,Urinary Tract Stones/Crystals Made Up of Uric Acid,Horse
 PABLO,Urine Crystals,Horse
@@ -848,8 +848,8 @@ POPCORN,Anemia Due to Deformed Red Blood Cells,Bird
 POPPY,Anemia Due to Enlarged Blood Cells,Bird
 PORCHE,Anemia Due to Iron Deficiency,Bird
 PORKCHOP,Anemia Related to the Immune System,Bird
-PORKY,Anemia, Nonregenerative,Bird
-PORTER,Anemia, Regenerative,Bird
+PORKY,Anemia,Bird
+PORTER,Anemia,Bird
 POWDER,Antibiotic-resistant Bacterial Infections,Bird
 PRANCER,Antibiotic-Resistant Infections,Bird
 PRECIOUS,Antibodies that Attack Blood Cells at Lower Temperatures,Bird
@@ -865,12 +865,12 @@ PUDGE,Artery Inflammation,Bird
 PUFFY,Arthritis (Septic),Bird
 PUGSLEY,Arthritis of Multiple Joints,Bird
 PUMPKIN,Aspirin Poisoning,Bird
-PUNKIN,Atopic Dermatitis: Causes, Symptoms, and Treatments,Bird
+PUNKIN,Atopic Dermatitis: Causes,Bird
 PUPPY,Bacterial Infection (Actinomycosis),Bird
 PURDY,Bacterial Infection (Campylobacteriosis),Bird
 QUEEN,Bacterial Infection (Leptospirosis),Bird
 QUEENIE,Bacterial Infection (Metritis) of the Uterus,Bird
-QUINCY,Bacterial Infection (Mycoplasma, Ureaplasma, Acoleplasma),Bird
+QUINCY,Bacterial Infection (Mycoplasma,Bird
 QUINN,Bacterial Infection (Nocardiosis),Bird
 RAGS,Bacterial Infection (Pyelonephritis) of the Kidneys,Bird
 RAISON,Bacterial Infection (Streptococcus),Bird
@@ -884,7 +884,7 @@ RAVEN,Bile Duct Cancer,Bird
 REBEL,Bile Duct Obstruction,Bird
 RED,Birth Difficulties,Bird
 REGGIE,Black Widow Spider Bite Poisoning,Bird
-REILLY,Black, Tarry Feces Due to Presence of Blood,Bird
+REILLY,Black,Bird
 REMY,Bladder Inflammation with Polyps,Bird
 REX,Bleeding Disorder,Bird
 REXY,Bleeding of the Retina in the Eye,Bird
@@ -911,7 +911,7 @@ ROSCOE,Bone Marrow Cancer (Myeloma),Bird
 ROSEBUD,Bone Overgrowth,Bird
 ROSIE,Botflies (Maggots),Bird
 ROSY,Botulism,Bird
-ROVER,Brain and Spinal Cord Inflammation (Meningoencephalomyelitis, Eosinophilic),Bird
+ROVER,Brain and Spinal Cord Inflammation (Meningoencephalomyelitis,Bird
 ROWDY,Brain and Spinal Cord Inflammation,Bird
 ROXANNE,Brain Cell Degeneration,Bird
 ROXIE,Brain Disorder Due to Liver Disease,Bird
@@ -938,7 +938,7 @@ SALLY,Cancer of the Blood Vessel Cells,Bird
 SALTY,Cancerous and Non-Cancerous Growths in a  Mouth,Bird
 SAM,Cancerous Lymphoid Cells in the Lungs of ,Bird
 SAMANTHA,Canine Coronavirus Infection,Bird
-SAMMY,Canine Herpesvirus Causes, Diagnosis, and Treatment,Bird
+SAMMY,Canine Herpesvirus Causes,Bird
 SAMPSON,Capillariasis,Bird
 SAMSON,Carbon Monoxide Poisoning,Bird
 SANDY,Carcinoid Cancer,Bird
@@ -952,7 +952,7 @@ SAVANNAH,Chagas Disease,Bird
 SAWYER,Chemical Imbalance of Urine,Bird
 SCARLETT,Chest Bone Deformity,Bird
 SCHOTZIE,Chocolate Poisoning,Bird
-SCHULTZ,Chronic Inflammation of the Anus, Rectum or Perineum Region,Bird
+SCHULTZ,Chronic Inflammation of the Anus,Bird
 SCOOBIE,Chronic Inflammation of the Bronchi,Bird
 SCOOBY,Chronic Vomiting,Bird
 SCOOBY-DOO,Cirrhosis and Fibrosis of the Liver,Bird
