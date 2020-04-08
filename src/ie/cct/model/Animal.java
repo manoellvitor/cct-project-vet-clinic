@@ -1,7 +1,6 @@
 package ie.cct.model;
 
 
-import ie.cct.helper.Helper;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -11,7 +10,7 @@ import ie.cct.helper.Helper;
  *
  */
 
-public abstract class Animal implements Helper{
+public abstract class Animal{
 	//	List of common Attributes for Animal
 	protected String name;
 	protected int age;
