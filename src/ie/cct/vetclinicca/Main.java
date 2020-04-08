@@ -1,11 +1,16 @@
 package ie.cct.vetclinicca;
 
 
-import ie.cct.model.Bird;
-import ie.cct.model.Cat;
+import java.util.LinkedList;
+import java.util.List;
+
+import ie.cct.helper.Helper;
+import ie.cct.model.Animal;
 import ie.cct.model.Dog;
-import ie.cct.model.Horse;
-import ie.cct.model.Rabbit;
+//import ie.cct.model.Bird;
+//import ie.cct.model.Cat;
+//import ie.cct.model.Horse;
+//import ie.cct.model.Rabbit;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -17,22 +22,47 @@ import ie.cct.model.Rabbit;
 
 public class Main {
 	public static void main(String[] args) {		
+		//	List of Animals
+		List<Animal> animals = new LinkedList<Animal>();
+
 		
-		Dog dog1 = new Dog("Tico", 3, "Sarna");		
-		dog1.showInfo();
+//		Dog dog1 = new Dog("Tico", 3, "Sarna");		
+//		dog1.showInfo();
+//		
+//		Cat cat1 = new Cat("Lilica", 4, "Sars");
+//		cat1.showInfo();
+//		
+//		Bird bird1 = new Bird("Zero", 1, "Tiron");
+//		bird1.showInfo();
+//		
+//		Rabbit rabbit1 = new Rabbit("Titinho", 1, "Dirp");
+//		rabbit1.showInfo();
+//		
+//		Horse horse1 = new Horse("Tinha", 2, "Termo");
+//		horse1.showInfo();		
 		
-		Cat cat1 = new Cat("Lilica", 4, "Sars");
-		cat1.showInfo();
+		//	Read a CSV file then create new animals based on that data
 		
-		Bird bird1 = new Bird("Zero", 1, "Tiron");
-		bird1.showInfo();
-		
-		Rabbit rabbit1 = new Rabbit("Titinho", 1, "Dirp");
-		rabbit1.showInfo();
-		
-		Horse horse1 = new Horse("Tinha", 2, "Termo");
-		horse1.showInfo();
-		
+			//	Set the PATH and name of the File
+			String file = "petNames.csv";
+			List<String[]> newAnimals = Helper.read(file);
+			for(String[] animal : newAnimals) {
+				String name = animal[0];
+				int age = (int) (Math.random() * Math.pow(10, 1));
+				String medicalCondition = animal[1];
+				String animalKind = animal[2];				
+				
+				if(animalKind.equals("Dog")) {
+					animals.add(new Dog(name, age, medicalCondition));
+				}else {
+					System.out.println("ERROR READING ANIMAL KIND");
+				}
+			}
+			
+			for(Animal anim : animals) {
+				System.out.println("\n----------------------------------------------------");
+				anim.showInfo();
+			}
 	}
 
 }

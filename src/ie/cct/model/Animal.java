@@ -1,5 +1,6 @@
 package ie.cct.model;
 
+
 import ie.cct.helper.Helper;
 
 /**
@@ -28,7 +29,7 @@ public abstract class Animal implements Helper{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) {		
 		this.name = name;
 	}
 
@@ -49,8 +50,7 @@ public abstract class Animal implements Helper{
 	}
 
 	// List of common methods for Animal
-	public abstract void generateAnimals();
-	
+		
 	public void showInfo() {
 		System.out.println("NAME: " + name +
 						   "\nDOG AGE: " + age +
