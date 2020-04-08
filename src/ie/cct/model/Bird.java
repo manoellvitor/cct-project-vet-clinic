@@ -13,7 +13,6 @@ public class Bird extends Animal{
 	//	Constructor
 	public Bird(String name, int age, String medicalCondition, String animalKind) {
 		super(name, age, medicalCondition, animalKind);
-		System.out.println("NEW BIRD");
 	}
 
 	

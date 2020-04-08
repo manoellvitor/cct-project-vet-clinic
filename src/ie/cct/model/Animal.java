@@ -12,7 +12,7 @@ import ie.cct.helper.Helper;
  */
 
 public abstract class Animal implements Helper{
-	//	List of common Attributes for AdminStaff
+	//	List of common Attributes for Animal
 	protected String name;
 	protected int age;
 	protected String medicalCondition;
@@ -61,7 +61,6 @@ public abstract class Animal implements Helper{
 	
 
 	// List of common methods for Animal
-
 
 	public void showInfo() {
 		System.out.println("ANIMAL KIND: "	+ animalKind + 

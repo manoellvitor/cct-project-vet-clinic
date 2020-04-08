@@ -58,7 +58,6 @@ public class Main {
 				
 				if(animalKind.equals("Dog")) {
 					animals.add(new Dog(name, age, medicalCondition, animalKind));
-					System.out.println("DOG");
 				}else if(animalKind.equals("Cat")){
 					animals.add(new Cat(name, age, medicalCondition, animalKind));
 				}else if(animalKind.equals("Rabbit")){
@@ -71,11 +70,12 @@ public class Main {
 					System.out.println("ERROR READING ANIMAL KIND");
 				}
 			}
-			
 			for(Animal anim : animals) {
 				System.out.println("\n----------------------------------------------------");
 				anim.showInfo();
 			}
+			
+
 	}
 
 }
