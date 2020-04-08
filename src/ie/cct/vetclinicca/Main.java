@@ -48,7 +48,7 @@ public class Main {
 		//	Read a CSV file then create new animals based on that data
 		
 			//	Set the PATH and name of the File
-			String file = "petNames.csv";
+			String file = "animalsData.csv";
 			List<String[]> newAnimals = Helper.read(file);
 			for(String[] animal : newAnimals) {
 				String name = animal[0];
