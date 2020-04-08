@@ -16,12 +16,14 @@ public abstract class Animal implements Helper{
 	protected String name;
 	protected int age;
 	protected String medicalCondition;
+	protected String animalKind;
 
 	//	Constructor
-	public Animal(String name, int age, String medicalCondition) {
+	public Animal(String name, int age, String medicalCondition, String animalKind) {
 		this.name = name;
 		this.age = age;
 		this.medicalCondition = medicalCondition;
+		this.animalKind = animalKind;
 	}
 
 	//	Getters and Setters
@@ -48,14 +50,23 @@ public abstract class Animal implements Helper{
 	public void setMedicalCondition(String medicalCondition) {
 		this.medicalCondition = medicalCondition;
 	}
+	
+	public String getAnimalKind() {
+		return animalKind;
+	}
+	
+	public void setAnimalKind(String animalKind) {
+		this.animalKind = animalKind;
+	}
+	
 
 	// List of common methods for Animal
-		
+
+
 	public void showInfo() {
-		System.out.println("NAME: " + name +
+		System.out.println("ANIMAL KIND: "	+ animalKind + 
+						   "\nNAME: " + name +
 						   "\nDOG AGE: " + age +
 						   "\nMEDICAL CONDITION: " + medicalCondition);
-
-		System.out.println("-----------------------------------");
 	}
 }

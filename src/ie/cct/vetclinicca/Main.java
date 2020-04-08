@@ -6,7 +6,11 @@ import java.util.List;
 
 import ie.cct.helper.Helper;
 import ie.cct.model.Animal;
+import ie.cct.model.Bird;
+import ie.cct.model.Cat;
 import ie.cct.model.Dog;
+import ie.cct.model.Horse;
+import ie.cct.model.Rabbit;
 //import ie.cct.model.Bird;
 //import ie.cct.model.Cat;
 //import ie.cct.model.Horse;
@@ -53,7 +57,16 @@ public class Main {
 				String animalKind = animal[2];				
 				
 				if(animalKind.equals("Dog")) {
-					animals.add(new Dog(name, age, medicalCondition));
+					animals.add(new Dog(name, age, medicalCondition, animalKind));
+					System.out.println("DOG");
+				}else if(animalKind.equals("Cat")){
+					animals.add(new Cat(name, age, medicalCondition, animalKind));
+				}else if(animalKind.equals("Rabbit")){
+					animals.add(new Rabbit(name, age, medicalCondition, animalKind));
+				}else if(animalKind.equals("Horse")){
+					animals.add(new Horse(name, age, medicalCondition, animalKind));
+				}else if(animalKind.equals("Bird")){
+					animals.add(new Bird(name, age, medicalCondition, animalKind));
 				}else {
 					System.out.println("ERROR READING ANIMAL KIND");
 				}

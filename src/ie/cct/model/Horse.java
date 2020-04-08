@@ -9,10 +9,12 @@ package ie.cct.model;
  *
  */
 
-public class Dog extends Animal{
+public class Horse extends Animal{
 	//	Constructor
-	public Dog(String name, int age, String medicalCondition, String animalKind) {
+	public Horse(String name, int age, String medicalCondition, String animalKind) {
 		super(name, age, medicalCondition, animalKind);
 	}
+
+	
 
 }
