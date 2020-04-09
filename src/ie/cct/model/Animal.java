@@ -62,9 +62,9 @@ public abstract class Animal{
 	// List of common methods for Animal
 
 	public void showInfo() {
-		System.out.println("ANIMAL KIND: "	+ animalKind + 
-						   "\nNAME: " + name +
-						   "\nPET AGE: " + age +
-						   "\nMEDICAL CONDITION: " + medicalCondition);
+		System.out.println("Type of Animal: "	+ animalKind + 
+						   "\nName of Animal: " + name +
+						   "\nAge: " + age +
+						   "\nMedical Condition: " + medicalCondition);
 	}
 }

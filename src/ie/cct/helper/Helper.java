@@ -61,7 +61,7 @@ public class Helper {
 		for(String[] animal : newAnimals) {
 			//	Calling the function to modify the name passing the name on position 0 of my List
 			String name = nameToLowerCase(animal[0]);
-			int age = (int) (Math.random() * Math.pow(10, 1));
+			int age = generateAge();
 			String medicalCondition = animal[1];
 			String animalKind = animal[2];				
 
@@ -82,17 +82,28 @@ public class Helper {
 
 		showAnimals(animals);
 	}
-
-	/*
-	 * I have a List with all names in UPPERCASE so to make the program to looks
-	 * better i wrote this method to convert the rest of the name in LOWERCASE
-	 */
+	
+	//	Function to Fix Names
+		/*
+		 * I have a List with all names in UPPERCASE so to make the program to looks
+		 * better i wrote this method to convert the rest of the name in LOWERCASE
+		 */
 	public static String nameToLowerCase(String str) {
 	    if(str == null || str.isEmpty()) {
 	        return str;
 	    }
 
 	    return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
+	}
+	
+	//	Function to Generate Age and do not give a age == 0
+	public static int generateAge() {
+		int age = 0;
+		while (age == 0) {
+			age = (int) (Math.random() * Math.pow(10, 1));
+		}
+		return age;
+		
 	}
 
 	//	Function to show Animals
