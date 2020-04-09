@@ -8,14 +8,14 @@ package ie.cct.staffmodel;
  *
  */
 
-public class Receptionist extends StaffMember {
+public class Veterinarian extends StaffMember {
 
 	// Constructor
-	public Receptionist(int salaryLevel, String position) {
+	public Veterinarian(int salaryLevel, String position) {
 		super(salaryLevel, position);
 
 	}
 
-	// List of common methods of Receptionist
+	// List of common methods of Veterinarian
 
 }

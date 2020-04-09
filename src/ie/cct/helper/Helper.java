@@ -82,6 +82,12 @@ public class Helper {
 		showAnimals(animals);
 	}
 
+	// Function to generate Staff
+	public static void startStaff() {
+		System.out.println("STAFF MEMBERS ADDED");
+
+	}
+
 	// Function to Fix Names
 	/*
 	 * I have a List with all names in UPPERCASE so to make the program to looks
