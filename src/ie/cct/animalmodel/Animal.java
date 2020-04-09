@@ -1,6 +1,4 @@
-package ie.cct.model;
-
-
+package ie.cct.animalmodel;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -10,14 +8,14 @@ package ie.cct.model;
  *
  */
 
-public abstract class Animal{
-	//	List of common Attributes for Animal
+public abstract class Animal {
+	// List of common Attributes for Animal
 	protected String name;
 	protected int age;
 	protected String medicalCondition;
 	protected String animalKind;
 
-	//	Constructor
+	// Constructor
 	public Animal(String name, int age, String medicalCondition, String animalKind) {
 		this.name = name;
 		this.age = age;
@@ -25,12 +23,12 @@ public abstract class Animal{
 		this.animalKind = animalKind;
 	}
 
-	//	Getters and Setters
+	// Getters and Setters
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {		
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -41,7 +39,7 @@ public abstract class Animal{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
 	public String getMedicalCondition() {
 		return medicalCondition;
 	}
@@ -49,22 +47,19 @@ public abstract class Animal{
 	public void setMedicalCondition(String medicalCondition) {
 		this.medicalCondition = medicalCondition;
 	}
-	
+
 	public String getAnimalKind() {
 		return animalKind;
 	}
-	
+
 	public void setAnimalKind(String animalKind) {
 		this.animalKind = animalKind;
 	}
-	
 
 	// List of common methods for Animal
 
 	public void showInfo() {
-		System.out.println("Type of Animal: "	+ animalKind + 
-						   "\nName of Animal: " + name +
-						   "\nAge: " + age +
-						   "\nMedical Condition: " + medicalCondition);
+		System.out.println("Type of Animal: " + animalKind + "\nName of Animal: " + name + "\nAge: " + age
+				+ "\nMedical Condition: " + medicalCondition);
 	}
 }

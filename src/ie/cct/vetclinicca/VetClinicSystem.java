@@ -10,12 +10,10 @@ import ie.cct.helper.Helper;
  *
  */
 
-public class Main {
-	public static void main(String[] args) {		
-		
-			Helper.startAnimals();
-			
-			
+public class VetClinicSystem {
+	public static void main(String[] args) {
+
+		Helper.startAnimals();
 
 	}
 

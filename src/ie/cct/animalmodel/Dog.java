@@ -1,5 +1,4 @@
-package ie.cct.model;
-
+package ie.cct.animalmodel;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -9,8 +8,8 @@ package ie.cct.model;
  *
  */
 
-public class Dog extends Animal{
-	//	Constructor
+public class Dog extends Animal {
+	// Constructor
 	public Dog(String name, int age, String medicalCondition, String animalKind) {
 		super(name, age, medicalCondition, animalKind);
 	}
