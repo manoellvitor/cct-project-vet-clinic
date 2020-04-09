@@ -59,7 +59,8 @@ public class Helper {
 
 		List<String[]> newAnimals = Helper.read(file);
 		for(String[] animal : newAnimals) {
-			String name = animal[0];
+			//	Calling the function to modify the name passing the name on position 0 of my List
+			String name = nameToLowerCase(animal[0]);
 			int age = (int) (Math.random() * Math.pow(10, 1));
 			String medicalCondition = animal[1];
 			String animalKind = animal[2];				
@@ -80,6 +81,18 @@ public class Helper {
 		}
 
 		showAnimals(animals);
+	}
+
+	/*
+	 * I have a List with all names in UPPERCASE so to make the program to looks
+	 * better i wrote this method to convert the rest of the name in LOWERCASE
+	 */
+	public static String nameToLowerCase(String str) {
+	    if(str == null || str.isEmpty()) {
+	        return str;
+	    }
+
+	    return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
 	}
 
 	//	Function to show Animals
