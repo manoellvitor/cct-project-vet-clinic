@@ -11,8 +11,8 @@ package ie.cct.staffmodel;
 public class Receptionist extends StaffMember {
 
 	// Constructor
-	public Receptionist(int salaryLevel, String position) {
-		super(salaryLevel, position);
+	public Receptionist(int salaryLevel) {
+		super(salaryLevel);
 
 	}
 

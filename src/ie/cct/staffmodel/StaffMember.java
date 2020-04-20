@@ -10,10 +10,14 @@ package ie.cct.staffmodel;
 public abstract class StaffMember {
 	// List of common Attributes for AdminStaff
 	protected String name;
-	protected static int staffNumber = 0000;
+
+	// The staffNumber is static and unique in each object instance of this class
+	protected static int staffNumber = 100;
 	protected int salaryLevel;
 	protected String position;
 
+	String className = this.getClass().getSimpleName();
+	// Array of names for Staff
 	protected String[] names = { "Johnson Byam", "Marisela Ledgerwood", "Horacio Shaffer", "Serina Bunting",
 			"Sheryl Montes", "Lourie Wever", "Teri Fray", "Mitzie Remer", "Kittie Bruck", "Inger Brittan",
 			"Deandrea Braswell", "Tashia Tenaglia", "Kaycee Caudill", "Melissia Custodio", "Yelena Fortier",
@@ -25,17 +29,21 @@ public abstract class StaffMember {
 			"King Filippelli", "Pura Novotny", "Chery Corley", "Blair Shouse", "Maryellen Catalano", "Jacinda Pare" };
 
 	// Constructor
-	public StaffMember(int salaryLevel, String position) {
+	public StaffMember(int salaryLevel) {
 		this.name = getName();
 		this.salaryLevel = salaryLevel;
-		this.position = position;
+		this.position = getPosition();
+
+		// staffNumber is incremented in each time a new Staff member is created.
 		staffNumber++;
 	}
 
 	// Getters and Setters
 	public String getName() {
-
+		// Here I am generating a random number in a range 0 - 50
 		int namePosition = (int) (Math.random() * Math.pow(50, 1));
+
+		// And setting the name with the name on the randomly position
 		name = names[namePosition];
 
 		return name;
@@ -62,6 +70,12 @@ public abstract class StaffMember {
 	}
 
 	public String getPosition() {
+
+		if (className.equals("Nurse")) {
+			position = "Nurse";
+		} else {
+			position = "DID NOT FOUND";
+		}
 		return position;
 	}
 
@@ -71,6 +85,7 @@ public abstract class StaffMember {
 
 	// List of common methods for AdminStaff
 	public void showInfo() {
-		System.out.println("Staff Name: " + name + "\nSalary Level: " + salaryLevel + "\nPosition: " + position);
+		System.out.println("Staff Name: " + name + "\nSalary Level: " + salaryLevel + "\nPosition: " + position
+				+ "\nStaff Number: " + staffNumber);
 	}
 }

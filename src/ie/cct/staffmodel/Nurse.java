@@ -11,9 +11,8 @@ package ie.cct.staffmodel;
 public class Nurse extends StaffMember {
 
 	// Constructor
-	public Nurse(int salaryLevel, String position) {
-		super(salaryLevel, position);
-
+	public Nurse(int salaryLevel) {
+		super(salaryLevel);
 	}
 
 	// List of common methods of Nurse

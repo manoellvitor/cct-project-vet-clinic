@@ -11,8 +11,8 @@ package ie.cct.staffmodel;
 public class TraineeVet extends StaffMember {
 
 	// Constructor
-	public TraineeVet(int salaryLevel, String position) {
-		super(salaryLevel, position);
+	public TraineeVet(int salaryLevel) {
+		super(salaryLevel);
 
 	}
 

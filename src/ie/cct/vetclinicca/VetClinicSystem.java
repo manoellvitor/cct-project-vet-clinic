@@ -18,13 +18,10 @@ public class VetClinicSystem {
 		Helper.startAnimals();
 		Helper.startStaff();
 
-		Nurse n1 = new Nurse(1, "Nurse");
+		Nurse n1 = new Nurse(1);
 		n1.showInfo();
 
-		Nurse n2 = new Nurse(1, "Nurse");
-		n2.showInfo();
-
-		Manager n3 = new Manager(1, "Manager");
+		Manager n3 = new Manager(1);
 		n3.showInfo();
 	}
 
