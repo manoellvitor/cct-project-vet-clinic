@@ -25,7 +25,7 @@ import ie.cct.animalmodel.Rabbit;
 public class Helper {
 
 	// Function to Generate Animals Names
-	public static String nameGenerator() {
+	public static String petNameGenerator() {
 
 		// Array of Names (1000 names)
 		// Names got from :

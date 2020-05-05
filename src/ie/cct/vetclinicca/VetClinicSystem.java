@@ -14,7 +14,7 @@ import ie.cct.model.Dog;
 public class VetClinicSystem {
 	public static void main(String[] args) {
 
-		Dog dog1 = new Dog(Helper.nameGenerator(), 2, "Sarna");
+		Dog dog1 = new Dog(Helper.petNameGenerator(), 2, "Sarna");
 		System.out.println(dog1.getName());
 	}
 
