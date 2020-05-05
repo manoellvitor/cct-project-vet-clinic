@@ -1,8 +1,7 @@
 package ie.cct.vetclinicca;
 
 import ie.cct.helper.Helper;
-import ie.cct.staffmodel.Manager;
-import ie.cct.staffmodel.Nurse;
+import ie.cct.model.Dog;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -15,14 +14,8 @@ import ie.cct.staffmodel.Nurse;
 public class VetClinicSystem {
 	public static void main(String[] args) {
 
-		Helper.startAnimals();
-		Helper.startStaff();
-
-		Nurse n1 = new Nurse(1);
-		n1.showInfo();
-
-		Manager n3 = new Manager(1);
-		n3.showInfo();
+		Dog dog1 = new Dog(Helper.nameGenerator(), 2, "Sarna");
+		System.out.println(dog1.getName());
 	}
 
 }
