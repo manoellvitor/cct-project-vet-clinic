@@ -16,7 +16,9 @@ public abstract class StaffMember {
 	protected int salaryLevel;
 	protected String position;
 
+	// Variable to hold the name of each object from the instance of the class
 	String className = this.getClass().getSimpleName();
+
 	// Array of names for Staff
 	protected String[] names = { "Johnson Byam", "Marisela Ledgerwood", "Horacio Shaffer", "Serina Bunting",
 			"Sheryl Montes", "Lourie Wever", "Teri Fray", "Mitzie Remer", "Kittie Bruck", "Inger Brittan",
