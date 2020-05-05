@@ -11,7 +11,7 @@ public abstract class Employee {
 
 	// Common attributes of Employee
 	protected String name;
-	protected static int staffNumber = 000;
+	protected static int staffNumber = 2020;
 	protected int salaryLevel;
 
 	// Constructor
@@ -19,7 +19,7 @@ public abstract class Employee {
 		super();
 		this.name = name;
 		this.salaryLevel = salaryLevel;
-		salaryLevel++;
+		staffNumber++;
 	}
 
 	// Getters and Setters

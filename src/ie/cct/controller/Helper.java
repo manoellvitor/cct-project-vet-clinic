@@ -1,6 +1,16 @@
 package ie.cct.controller;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
+
+import ie.cct.cli.CLI;
+import ie.cct.model.Animal;
+import ie.cct.model.Bird;
+import ie.cct.model.Cat;
+import ie.cct.model.Dog;
+import ie.cct.model.Horse;
+import ie.cct.model.Rabbit;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -10,6 +20,11 @@ import java.util.Random;
  *
  */
 public class Helper {
+	List<Animal> animals = new LinkedList<Animal>();
+
+	public Helper() {
+		new CLI(this);
+	}
 
 	// Function to Generate Animals Names
 	public static String petNameGenerator() {
@@ -532,6 +547,32 @@ public class Helper {
 
 		// Return the Name
 		return name;
+
+	}
+
+	// Function to generate 1000 animals, 200 of each type
+	public void startAnimals() {
+
+		// For loop to generate 200 animals of each type
+		for (int i = 0; i < 200; i++) {
+			animals.add(new Dog(petNameGenerator(), generateAge(), medicalCondition()));
+		}
+
+		for (int i = 0; i < 200; i++) {
+			animals.add(new Cat(petNameGenerator(), generateAge(), medicalCondition()));
+		}
+
+		for (int i = 0; i < 200; i++) {
+			animals.add(new Bird(petNameGenerator(), generateAge(), medicalCondition()));
+		}
+
+		for (int i = 0; i < 200; i++) {
+			animals.add(new Horse(petNameGenerator(), generateAge(), medicalCondition()));
+		}
+
+		for (int i = 0; i < 200; i++) {
+			animals.add(new Rabbit(petNameGenerator(), generateAge(), medicalCondition()));
+		}
 
 	}
 }
