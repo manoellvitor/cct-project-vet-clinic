@@ -3,6 +3,7 @@ package ie.cct.vetclinicca;
 import ie.cct.controller.Helper;
 import ie.cct.model.Cat;
 import ie.cct.model.Dog;
+import ie.cct.model.Veterinarian;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -26,6 +27,9 @@ public class VetClinicSystem {
 		System.out.println(cat1.getAge());
 		System.out.println(cat1.getMedicalCondition());
 		System.out.println(cat1.getClass().getSimpleName());
+
+		Veterinarian vet1 = new Veterinarian(Helper.staffNameGenerator(), 1);
+		System.out.println(vet1.getName());
 	}
 
 }

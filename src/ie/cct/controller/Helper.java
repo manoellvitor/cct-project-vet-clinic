@@ -1,8 +1,6 @@
 package ie.cct.controller;
 
-
 import java.util.Random;
-
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -509,6 +507,31 @@ public class Helper {
 
 	}
 
-	
+	// Function to Generate Staff Names based on the 2 arrays of First name and
+	// Second name
+	public static String staffNameGenerator() {
 
+		// Array of Names (30 names)
+		// Names got from :
+		// http://listofrandomnames.com/
+		String[] firstName = { "Marylee", "Maryanne", "Annamaria", "Manie", "Ismael", "Cleveland", "Vallie", "Jayne",
+				"Adam", "Venice", "Lissette", "Loria", "Gussie", "Betsy", "Rikki", "Karyn", "Richelle", "Melodee",
+				"Trudie", "Jacqualine", "Mae", "Tomeka", "Casie", "Desire", "Aurore", "Santana", "Johnie", "Jame",
+				"Agustin", "Bernardo", };
+		String[] secondName = { "Trudie", "Marica", "Laurice", "Caron", "Criselda", "Deonna", "Susie", "Cortez",
+				"Tempie", "Milissa", "Newton", "Malvina", "Chiquita", "Edward", "Patsy", "Goldie", "Earline", "Vernice",
+				"Lauretta", "Charlott", "Evelyne", "Elizebeth", "Lela", "Caprice", "Nilda", "Yesenia", "Nydia", "Bruce",
+				"Estrella", "Ellena", };
+
+		Random ran = new Random();
+
+		// pick a Name based on length of array
+		String fName = firstName[ran.nextInt(firstName.length)];
+		String sName = secondName[ran.nextInt(secondName.length)];
+		String name = fName + " " + sName;
+
+		// Return the Name
+		return name;
+
+	}
 }

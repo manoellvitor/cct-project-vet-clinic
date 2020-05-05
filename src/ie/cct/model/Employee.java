@@ -19,6 +19,7 @@ public abstract class Employee {
 		super();
 		this.name = name;
 		this.salaryLevel = salaryLevel;
+		salaryLevel++;
 	}
 
 	// Getters and Setters
