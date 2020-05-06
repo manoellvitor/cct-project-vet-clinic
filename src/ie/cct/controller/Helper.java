@@ -609,11 +609,23 @@ public class Helper {
 
 	// Function to List all Staff Members
 	public void listStaffMembers() {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee staff : employees) {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 			System.out.println("|> " + staff.getName() + " - " + staff.getClass().getSimpleName());
 			System.out.println("|> Staff-Number: " + staff.getStaffNumber());
 			System.out.println("|> Salary Level: " + staff.getSalaryLevel());
+		}
+
+	}
+
+	public void listStaffByCategory(int option) {
+		if (option == 1) {
+			System.out.println("Veterinarians");
+		} else if (option == 2) {
+			System.out.println("Nurses");
+		} else if (option == 3) {
+			System.out.println("Trainees Vet");
 		}
 	}
 }

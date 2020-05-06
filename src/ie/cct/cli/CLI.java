@@ -21,41 +21,79 @@ public class CLI {
 
 	public CLI(Helper helper) {
 
-		welcome();
+		welcome(helper);
 
+	}
+
+	private void staffMenu() {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~STAFF MENU~~~~~~~~~~~~~~~~~~~~~#");
+		System.out.println("     >>>     1 - List All Staff             <<<");
+		System.out.println("     >>>     2 - List Staff by Categories   <<<");
+		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
+		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
+		System.out.println("     >>>     5 - Back to Menu               <<<");
+		System.out.println("     >>>     0 - EXIT                       <<<");
+		option = readUser();
+	}
+
+	private void staffCategory(int option, Helper helper) {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~CATEGORIES~~~~~~~~~~~~~~~~~~~~~#");
+		System.out.println("     >>>     1 - IT Specialist              <<<");
+		System.out.println("     >>>     2 - Receptionist               <<<");
+		System.out.println("     >>>     3 - Veterinarian               <<<");
+		System.out.println("     >>>     4 - Nurse                      <<<");
+		System.out.println("     >>>     5 - Trainee Vet                <<<");
+		System.out.println("     >>>     0 - EXIT                       <<<");
+		option = readUser();
+		helper.listStaffByCategory(option);
+
+	}
+
+	// Function to show a nice message to the user
+	public void welcome(Helper helper) {
+
+		System.out.println("#-----------------------------------------------------#");
+		System.out.println("|                 VET CLINIC SYSTEMS                  |");
+		System.out.println("#-----------------------------------------------------#");
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~MENU~~~~~~~~~~~~~~~~~~~~~~~~~#");
+		mainMenu(helper);
+	}
+
+	private void mainMenu(Helper helper) {
 		do {
 			System.out.println("     >>>     1 - For Open the Clinic     <<<");
-			System.out.println("     >>>     0 - For EXIT                <<<");
+			System.out.println("     >>>     0 - TO EXIT                 <<<");
 			option = readUser();
+
 			if (option == 1) {
 				helper.startAnimals();
 				helper.startStaffMembers();
 				do {
-					System.out.println("     >>>     1 - List All Staff Members     <<<");
-					System.out.println("     >>>     2 - List All Animals           <<<");
-					System.out.println("     >>>     0 - For EXIT                   <<<");
+					SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+					Date date = new Date();
+					System.out.println("#     Wellcome, today is:  " + formatter.format(date) + "        #");
+					System.out.println("#~~~~~~~~~~~~~~~~~~~~~~OPTIONS~~~~~~~~~~~~~~~~~~~~~~~~#");
+					System.out.println("     >>>     1 - Staff Menu     <<<");
+					System.out.println("     >>>     2 - Animals Menu   <<<");
+					System.out.println("     >>>     0 - << BACK        <<<");
 					option = readUser();
 					if (option == 1) {
-						helper.listStaffMembers();
+						staffMenu();
+						if (option == 1) {
+							helper.listStaffMembers();
+							staffMenu();
+						} else if (option == 2) {
+							staffCategory(option, helper);
+							staffMenu();
+						}
+					} else if (option == 0) {
+						mainMenu(helper);
 					}
 				} while (!validOption(option));
 			} else if (option == 0) {
 				System.out.println("Thank you for use our System.");
 			}
 		} while (!validOption(option));
-
-	}
-
-	// Function to show a nice message to the user
-	public void welcome() {
-
-		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-		Date date = new Date();
-		System.out.println("#     Wellcome, today is:  " + formatter.format(date) + "        #");
-		System.out.println("#-----------------------------------------------------#");
-		System.out.println("|                 VET CLINIC MENU                     |");
-		System.out.println("#-----------------------------------------------------#");
-		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 
 	}
 
