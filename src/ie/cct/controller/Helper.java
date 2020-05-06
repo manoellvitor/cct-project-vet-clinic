@@ -611,9 +611,9 @@ public class Helper {
 	public void listStaffMembers() {
 		for (Employee staff : employees) {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
-			System.out.println(staff.getName() + " - " + staff.getClass().getSimpleName());
-			System.out.println("Staff-Number: " + staff.getStaffNumber());
-			System.out.println("Salary Level: " + staff.getSalaryLevel());
+			System.out.println("|> " + staff.getName() + " - " + staff.getClass().getSimpleName());
+			System.out.println("|> Staff-Number: " + staff.getStaffNumber());
+			System.out.println("|> Salary Level: " + staff.getSalaryLevel());
 		}
 	}
 }

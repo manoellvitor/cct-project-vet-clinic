@@ -32,7 +32,8 @@ public class CLI {
 				helper.startStaffMembers();
 				do {
 					System.out.println("     >>>     1 - List All Staff Members     <<<");
-					System.out.println("     >>>     0 - For EXIT                <<<");
+					System.out.println("     >>>     2 - List All Animals           <<<");
+					System.out.println("     >>>     0 - For EXIT                   <<<");
 					option = readUser();
 					if (option == 1) {
 						helper.listStaffMembers();
