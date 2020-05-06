@@ -552,7 +552,6 @@ public class Helper {
 
 	// Function to generate 1000 animals, 200 of each type
 	public void startAnimals() {
-
 		// For loop to generate 200 animals of each type
 		for (int i = 0; i < 200; i++) {
 			animals.add(new Dog(petNameGenerator(), generateAge(), medicalCondition()));
@@ -575,4 +574,6 @@ public class Helper {
 		}
 
 	}
+
+	// Function to show Animals Info
 }
