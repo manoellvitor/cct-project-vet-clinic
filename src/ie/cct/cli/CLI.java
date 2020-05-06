@@ -24,9 +24,20 @@ public class CLI {
 		welcome();
 
 		do {
+			System.out.println("     >>>     1 - For Open the Clinic     <<<");
+			System.out.println("     >>>     0 - For EXIT                <<<");
 			option = readUser();
 			if (option == 1) {
 				helper.startAnimals();
+				helper.startStaffMembers();
+				do {
+					System.out.println("     >>>     1 - List All Staff Members     <<<");
+					System.out.println("     >>>     0 - For EXIT                <<<");
+					option = readUser();
+					if (option == 1) {
+						helper.listStaffMembers();
+					}
+				} while (!validOption(option));
 			} else if (option == 0) {
 				System.out.println("Thank you for use our System.");
 			}
@@ -45,8 +56,6 @@ public class CLI {
 		System.out.println("#-----------------------------------------------------#");
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 
-		System.out.println("     >>>     1 - For Open the Clinic     <<<");
-		System.out.println("     >>>     0 - For EXIT                <<<");
 	}
 
 	// Function to read data from user keyboard

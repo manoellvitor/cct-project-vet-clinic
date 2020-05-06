@@ -9,8 +9,14 @@ import ie.cct.model.Animal;
 import ie.cct.model.Bird;
 import ie.cct.model.Cat;
 import ie.cct.model.Dog;
+import ie.cct.model.Employee;
 import ie.cct.model.Horse;
+import ie.cct.model.ITSpecialist;
+import ie.cct.model.Nurse;
 import ie.cct.model.Rabbit;
+import ie.cct.model.Receptionist;
+import ie.cct.model.TraineeVet;
+import ie.cct.model.Veterinarian;
 
 /**
  * @author Manoel Vitor Nascimento Lopes
@@ -20,7 +26,10 @@ import ie.cct.model.Rabbit;
  *
  */
 public class Helper {
+	// List of Animal to hold the objects of each kind of animals
 	List<Animal> animals = new LinkedList<Animal>();
+	// List of Employee to hold the objects of each kind of staff
+	List<Employee> employees = new LinkedList<Employee>();
 
 	public Helper() {
 		new CLI(this);
@@ -575,5 +584,36 @@ public class Helper {
 
 	}
 
-	// Function to show Animals Info
+	// Function to generate the staff members
+	public void startStaffMembers() {
+		for (int i = 0; i < 5; i++) {
+			employees.add(new ITSpecialist(staffNameGenerator(), 100));
+		}
+
+		for (int i = 0; i < 5; i++) {
+			employees.add(new Receptionist(staffNameGenerator(), 5));
+		}
+
+		for (int i = 0; i < 10; i++) {
+			employees.add(new Veterinarian(staffNameGenerator(), 50));
+		}
+
+		for (int i = 0; i < 10; i++) {
+			employees.add(new Nurse(staffNameGenerator(), 30));
+		}
+
+		for (int i = 0; i < 10; i++) {
+			employees.add(new TraineeVet(staffNameGenerator(), 10));
+		}
+	}
+
+	// Function to List all Staff Members
+	public void listStaffMembers() {
+		for (Employee staff : employees) {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println(staff.getName() + " - " + staff.getClass().getSimpleName());
+			System.out.println("Staff-Number: " + staff.getStaffNumber());
+			System.out.println("Salary Level: " + staff.getSalaryLevel());
+		}
+	}
 }
