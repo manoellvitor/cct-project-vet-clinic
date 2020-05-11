@@ -56,8 +56,8 @@ by you, but there should be several different tasks – e.g. Filing, Making Phon
 
 - List all the animals assigned to a member of medical staff ✔
 - List the order in which pets will be looked after by a particular member of the medical
-staff
-- For a given member of the medical staff, pass to the next pet. 
+staff ✘
+- For a given member of the medical staff, pass to the next pet. ✘
 
 ## Installation
 
