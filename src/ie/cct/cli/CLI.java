@@ -221,6 +221,39 @@ public class CLI {
 		}
 	}
 
+	// Treatment Menu
+	private void treatmentMenu(Helper helper) {
+		// Output for user
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~TREATMENT-MENU~~~~~~~~~~~~~~~~~~~~~#");
+		System.out.println("     >>>     1 - List All Animals from an Veterinarian             <<<");
+		System.out.println("     >>>     0 - <<< BACK                   <<<");
+
+		// Try catch block to check if the input from user is valid
+		// if it is it pass, if not it throws an exception and return to the menu
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Option Number:_ ");
+			option = Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e1) {
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			treatmentMenu(helper);
+		}
+
+		switch (option) {
+		case 1:
+			helper.listAnimalsFromVet();
+			treatmentMenu(helper);
+			break;
+		case 0:
+			treatmentMenu(helper);
+			break;
+		default:
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			treatmentMenu(helper);
+
+		}
+	}
+
 	// Function to show a nice message to the user
 	public void welcome(Helper helper) {
 		// Output for user
@@ -257,6 +290,7 @@ public class CLI {
 			helper.startAnimals();
 			helper.startStaffMembers();
 			helper.giveTask();
+			helper.assignTreatment();
 			break;
 		case 0:
 			System.out.println("Thank you for use our System.");
@@ -273,6 +307,7 @@ public class CLI {
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~OPTIONS~~~~~~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - Staff Menu     <<<");
 		System.out.println("     >>>     2 - Animals Menu   <<<");
+		System.out.println("     >>>     3 - Treatment Menu <<<");
 		System.out.println("     >>>     0 - << BACK        <<<");
 
 		// Try catch block to check if the input from user is valid
@@ -291,6 +326,9 @@ public class CLI {
 			break;
 		case 2:
 			animalMenu(helper);
+			break;
+		case 3:
+			treatmentMenu(helper);
 			break;
 		case 0:
 			mainMenu(helper);

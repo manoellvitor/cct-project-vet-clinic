@@ -20,6 +20,7 @@ import ie.cct.model.Rabbit;
 import ie.cct.model.Receptionist;
 import ie.cct.model.Task;
 import ie.cct.model.TraineeVet;
+import ie.cct.model.Treatment;
 import ie.cct.model.Veterinarian;
 
 /**
@@ -36,8 +37,13 @@ public class Helper {
 	List<Employee> employees = new LinkedList<Employee>();
 	// List of Tasks
 	List<Task> tasks = new LinkedList<Task>();
+	// List of Animals for treatment and the respective veterinarian
+	List<Treatment> treatments = new LinkedList<Treatment>();
+	// List of Veterinarians
+	List<Employee> vets = new LinkedList<Employee>();
 
 	public Helper() {
+		// Calling the CLI passing the instance of this Helper class
 		new CLI(this);
 	}
 
@@ -795,5 +801,68 @@ public class Helper {
 			}
 
 		}
+	}
+
+	// Function to assign an animal to a veterinarian
+	public void assignTreatment() {
+		int countAnimals = 0;
+
+		for (Employee vet : employees) {
+			if (vet.getClass().getSimpleName().equals("Veterinarian")) {
+				vets.add(vet);
+			}
+		}
+
+		// For each to give 100 animals for each veterinarian
+		// TO IMPLEMENT! - > Find a way to give the animals randomly
+		for (Animal ani : animals) {
+			if (countAnimals < 100) {
+				if (ani.getClass().getSimpleName().equals("Dog")) {
+					treatments.add(new Treatment(vets.get(0), ani));
+				}
+			} else if (countAnimals > 100 && countAnimals < 200) {
+				if (ani.getClass().getSimpleName().equals("Dog")) {
+					treatments.add(new Treatment(vets.get(1), ani));
+				}
+			} else if (countAnimals > 200 && countAnimals < 300) {
+				if (ani.getClass().getSimpleName().equals("Cat")) {
+					treatments.add(new Treatment(vets.get(2), ani));
+				}
+			} else if (countAnimals > 300 && countAnimals < 400) {
+				if (ani.getClass().getSimpleName().equals("Cat")) {
+					treatments.add(new Treatment(vets.get(3), ani));
+				}
+			} else if (countAnimals > 400 && countAnimals < 500) {
+				if (ani.getClass().getSimpleName().equals("Bird")) {
+					treatments.add(new Treatment(vets.get(4), ani));
+				}
+			} else if (countAnimals > 500 && countAnimals < 600) {
+				if (ani.getClass().getSimpleName().equals("Bird")) {
+					treatments.add(new Treatment(vets.get(5), ani));
+				}
+			} else if (countAnimals > 600 && countAnimals < 700) {
+				if (ani.getClass().getSimpleName().equals("Horse")) {
+					treatments.add(new Treatment(vets.get(6), ani));
+				}
+			} else if (countAnimals > 700 && countAnimals < 800) {
+				if (ani.getClass().getSimpleName().equals("Horse")) {
+					treatments.add(new Treatment(vets.get(7), ani));
+				}
+			} else if (countAnimals > 800 && countAnimals < 900) {
+				if (ani.getClass().getSimpleName().equals("Rabbit")) {
+					treatments.add(new Treatment(vets.get(8), ani));
+				}
+			} else if (countAnimals > 900 && countAnimals < 1000) {
+				if (ani.getClass().getSimpleName().equals("Rabbit")) {
+					treatments.add(new Treatment(vets.get(9), ani));
+				}
+			}
+			countAnimals++;
+		}
+
+	}
+
+	public void listAnimalsFromVet() {
+		System.out.println("Test");
 	}
 }
