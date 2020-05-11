@@ -18,6 +18,7 @@ import ie.cct.model.ITSpecialist;
 import ie.cct.model.Nurse;
 import ie.cct.model.Rabbit;
 import ie.cct.model.Receptionist;
+import ie.cct.model.Task;
 import ie.cct.model.TraineeVet;
 import ie.cct.model.Veterinarian;
 
@@ -33,6 +34,8 @@ public class Helper {
 	List<Animal> animals = new LinkedList<Animal>();
 	// List of Employee to hold the objects of each kind of staff
 	List<Employee> employees = new LinkedList<Employee>();
+	// List of Tasks
+	List<Task> tasks = new LinkedList<Task>();
 
 	public Helper() {
 		new CLI(this);
@@ -554,6 +557,23 @@ public class Helper {
 
 	}
 
+	// Function to Generate Task Names
+	public static String generateTask() {
+
+		// Array of Tasks
+		String[] taskList = { "Making Phone Calls", "On Hollidays", "Filling Pappers", "Making Coffe",
+				"Making Appoitments", "Fixing Computters", "Helping Others", "Searching for News" };
+
+		Random ran = new Random();
+
+		// pick a Name based on length of array
+		String task = taskList[ran.nextInt(taskList.length)];
+
+		// Return the Name
+		return task;
+
+	}
+
 	// Function to generate 1000 animals, 200 of each type
 	public void startAnimals() {
 		// For loop to generate 200 animals of each type
@@ -599,6 +619,16 @@ public class Helper {
 
 		for (int i = 0; i < 10; i++) {
 			employees.add(new TraineeVet(staffNameGenerator(), 10));
+		}
+	}
+
+	// Function to give some random tasks
+	public void giveTask() {
+		for (Employee admStaff : employees) {
+			if (admStaff.getClass().getSimpleName().equals("ITSpecialist")
+					|| admStaff.getClass().getSimpleName().equals("Receptionist")) {
+				tasks.add(new Task(admStaff, generateTask()));
+			}
 		}
 	}
 
@@ -688,6 +718,7 @@ public class Helper {
 		}
 	}
 
+	// Function to List Animal by specific Name
 	public void listAnimalByName() {
 		// BufferedReader to receive data from the user Keyboard
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -723,5 +754,38 @@ public class Helper {
 
 		}
 
+	}
+
+	// Function to list Staff performing certain task
+	public void listByTask() {
+		String option = null;
+		;
+		// BufferedReader to receive data from the user Keyboard
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~TASK-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Task task : tasks) {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("|> " + task.getTask());
+		}
+
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Task name:_ ");
+			option = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		for (Task taskName : tasks) {
+			if (taskName.getTask().equals(option)) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~FOUNDED-TASK~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> Staff Name: " + taskName.getStaff().getName());
+				System.out.println("|> Staff Position: " + taskName.getStaff().getClass().getSimpleName());
+				System.out.println("|> Task: " + taskName.getTask());
+			}
+
+		}
 	}
 }

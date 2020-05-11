@@ -53,6 +53,8 @@ public class CLI {
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
 		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Option Number:_ ");
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
 			System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -77,6 +79,8 @@ public class CLI {
 			// Try catch block to check if the input from user is valid
 			// if it is it pass, if not it throws an exception and return to the menu
 			try {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.print("|> Enter the Option Number:_ ");
 				option = Integer.parseInt(reader.readLine());
 			} catch (IOException | NumberFormatException e1) {
 				System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -113,6 +117,11 @@ public class CLI {
 		case 3:
 			helper.listStaffByName();
 			staffMenu(helper);
+			break;
+		case 4:
+			helper.listByTask();
+			staffMenu(helper);
+			break;
 		case 0:
 			mainMenu(helper);
 			break;
@@ -141,6 +150,8 @@ public class CLI {
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
 		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Option Number:_ ");
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
 			System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -165,6 +176,8 @@ public class CLI {
 			// Try catch block to check if the input from user is valid
 			// if it is it pass, if not it throws an exception and return to the menu
 			try {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.print("|> Enter the Option Number:_ ");
 				option = Integer.parseInt(reader.readLine());
 			} catch (IOException | NumberFormatException e1) {
 				System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -227,6 +240,7 @@ public class CLI {
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
 		try {
+			System.out.print("|> Enter the Option Number:_ ");
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
 			System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -237,6 +251,7 @@ public class CLI {
 		case 1:
 			helper.startAnimals();
 			helper.startStaffMembers();
+			helper.giveTask();
 			break;
 		case 0:
 			System.out.println("Thank you for use our System.");
@@ -258,6 +273,7 @@ public class CLI {
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
 		try {
+			System.out.print("|> Enter the Option Number:_ ");
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
 			System.out.println("Invalid option, enter a valid NUMBER option!");
