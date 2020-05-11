@@ -297,6 +297,8 @@ public class CLI {
 
 		switch (option) {
 		case 1:
+			// Call all the methods to start Staff, animals and assign tasks and animals to
+			// be treated
 			helper.startAnimals();
 			helper.startStaffMembers();
 			helper.giveTask();
