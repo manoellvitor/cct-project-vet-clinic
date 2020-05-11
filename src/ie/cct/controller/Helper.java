@@ -608,7 +608,7 @@ public class Helper {
 	}
 
 	// Function to List all Staff Members
-	public void listStaffMembers() {
+	public void listAllStaffMembers() {
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee staff : employees) {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
@@ -619,13 +619,7 @@ public class Helper {
 
 	}
 
-	public void listStaffByCategory(int option) {
-		if (option == 1) {
-			System.out.println("Veterinarians");
-		} else if (option == 2) {
-			System.out.println("Nurses");
-		} else if (option == 3) {
-			System.out.println("Trainees Vet");
-		}
+	public void listStaffByCategory() {
+
 	}
 }
