@@ -56,7 +56,7 @@ public class CLI {
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
 			System.out.println("Invalid option, enter a valid NUMBER option!");
-			mainMenu(helper);
+			staffMenu(helper);
 		}
 
 		switch (option) {
@@ -80,7 +80,7 @@ public class CLI {
 				option = Integer.parseInt(reader.readLine());
 			} catch (IOException | NumberFormatException e1) {
 				System.out.println("Invalid option, enter a valid NUMBER option!");
-				mainMenu(helper);
+				staffMenu(helper);
 			}
 
 			switch (option) {
@@ -117,6 +117,59 @@ public class CLI {
 		default:
 			System.out.println("Invalid Option, Try Again!");
 			staffMenu(helper);
+		}
+	}
+
+	// Staff Menu
+	private void animalMenu(Helper helper) {
+
+		// Output for user
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~ANIMAL MENU~~~~~~~~~~~~~~~~~~~~~#");
+		System.out.println("     >>>     1 - List All Animals             <<<");
+		System.out.println("     >>>     2 - List Staff by Categories   <<<");
+		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
+		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
+		System.out.println("     >>>     0 - <<< BACK                   <<<");
+
+		// Try catch block to check if the input from user is valid
+		// if it is it pass, if not it throws an exception and return to the menu
+		try {
+			option = Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e1) {
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			animalMenu(helper);
+		}
+
+		switch (option) {
+		case 1:
+			helper.listAllAnimals();
+			animalMenu(helper);
+			break;
+		case 2:
+			// Output for user
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~CATEGORIES~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("     >>>     1 - Veterinarian             <<<");
+			System.out.println("     >>>     2 - Nurse                    <<<");
+			System.out.println("     >>>     3 - Trainee Vet              <<<");
+			System.out.println("     >>>     4 - IT Specialist            <<<");
+			System.out.println("     >>>     5 - Receptionist             <<<");
+			System.out.println("     >>>     0 - <<< BACK                 <<<");
+
+			// Try catch block to check if the input from user is valid
+			// if it is it pass, if not it throws an exception and return to the menu
+			try {
+				option = Integer.parseInt(reader.readLine());
+			} catch (IOException | NumberFormatException e1) {
+				System.out.println("Invalid option, enter a valid NUMBER option!");
+				animalMenu(helper);
+			}
+
+		case 0:
+			mainMenu(helper);
+			break;
+		default:
+			System.out.println("Invalid Option, Try Again!");
+			animalMenu(helper);
 		}
 	}
 
@@ -181,7 +234,7 @@ public class CLI {
 			staffMenu(helper);
 			break;
 		case 2:
-			System.out.println("Animal menu here!");
+			animalMenu(helper);
 			break;
 		case 0:
 			mainMenu(helper);

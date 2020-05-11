@@ -173,7 +173,7 @@ public class Helper {
 				"Antifreeze Poisoning", "Antifreeze Poisoning", "Anxiety and Compulsive Disorders",
 				"Are Lilies Poisonous to ?", "Are Onions and Garlic Bad For Your Dog?",
 				"Arrhythmias after Blunt Heart Trauma", "Arsenic Poisoning", "Artery Inflammation",
-				"Arthritis (Septic)", "Arthritis of Multiple Joints", "Aspirin Poisoning", "Atopic Dermatitis: Causes",
+				"Arthritis (Septic)", "Arthritis of Multiple Joints", "Aspirin Poisoning",
 				"Bacterial Infection (Actinomycosis)", "Bacterial Infection (Campylobacteriosis)",
 				"Bacterial Infection (Leptospirosis)", "Bacterial Infection (Metritis) of the Uterus",
 				"Bacterial Infection (Mycoplasma", "Bacterial Infection (Nocardiosis)",
@@ -201,12 +201,11 @@ public class Helper {
 				"Can  Get High? The Dangerous Effects of Marijuana on ", "Can  Have Panic Attacks?",
 				"Can Grass Kill Your Dog?", "Cancer of the Blood Vessel Cells",
 				"Cancerous and Non-Cancerous Growths in a  Mouth", "Cancerous Lymphoid Cells in the Lungs of ",
-				"Canine Coronavirus Infection", "Canine Herpesvirus Causes", "Capillariasis",
-				"Carbon Monoxide Poisoning", "Carcinoid Cancer", "Cardiac Arrest", "Cardiac Electrical Failure",
-				"Cardiomyopathy in Boxer ", "Carnitine Deficiency", "Cataracts", "Cavities", "Chagas Disease",
-				"Chemical Imbalance of Urine", "Chest Bone Deformity", "Chocolate Poisoning",
-				"Chronic Inflammation of the Anus", "Chronic Inflammation of the Bronchi", "Chronic Vomiting",
-				"Cirrhosis and Fibrosis of the Liver", "Claw and Nail Disorders", "Cleft Palate",
+				"Canine Coronavirus Infection", "Capillariasis", "Carbon Monoxide Poisoning", "Carcinoid Cancer",
+				"Cardiac Arrest", "Cardiac Electrical Failure", "Cardiomyopathy in Boxer ", "Carnitine Deficiency",
+				"Cataracts", "Cavities", "Chagas Disease", "Chemical Imbalance of Urine", "Chest Bone Deformity",
+				"Chocolate Poisoning", "Chronic Inflammation of the Anus", "Chronic Inflammation of the Bronchi",
+				"Chronic Vomiting", "Cirrhosis and Fibrosis of the Liver", "Claw and Nail Disorders", "Cleft Palate",
 				"Clotting Deficiency (Inherited)", "Clotting Deficiency (Liver Related)",
 				"Clotting Disorders of the Platelets", "Collapse During Exercise in Labrador Retrievers",
 				"Collapse of the Wind Pipe", "Collection of Fluid in the Lungs (Not Due to Heart Disease)",
@@ -229,13 +228,12 @@ public class Helper {
 				"Does Your Dog Have Asthma?", "Dog Ear Infection - Symptoms and Treatments",
 				"Dog Abdominal Cavity Inflammation - Dog Peritoneal Cavity", "Dog Dementia: Symptoms",
 				"Dog Diarrhea Treatment And Cures - Diarrhea (Antibiotic-Responsive)", "Dog Flu",
-				"Dog Mouth Cancer: Symptoms", "Dog Vomit: Types", "Dog Wheezing: Causes and Treatment Options",
-				" and Motion Sickness", "Droopy Eye", "Drowning (Near Drowning)", "Drug Poisoning", "Dry Eye Syndrome",
-				"E", "Ear Cancer (Adenocarcinoma)", "Ear Cancer", "Ear Cysts (Cholesteatoma)", "Ear Hematoma",
-				"Early Contractions and Labor", "Early Death in Puppies", "Electric Cord Bite Injury",
-				"Electrolyte Disturbance", "Elevated Sex Hormones", "Enlarged Gums",
-				"Enlarged Heart (Dilated Cardiomyopathy)", "Enlarged Liver", "Enlarged Spleen",
-				"Enlargement of Esophagus", "Estrus Symptoms after Spaying", "Ethanol Poisoning",
+				"Dog Mouth Cancer: Symptoms", "Dog Vomit: Types", " and Motion Sickness", "Droopy Eye",
+				"Drowning (Near Drowning)", "Drug Poisoning", "Dry Eye Syndrome", "E", "Ear Cancer (Adenocarcinoma)",
+				"Ear Cancer", "Ear Cysts (Cholesteatoma)", "Ear Hematoma", "Early Contractions and Labor",
+				"Early Death in Puppies", "Electric Cord Bite Injury", "Electrolyte Disturbance",
+				"Elevated Sex Hormones", "Enlarged Gums", "Enlarged Heart (Dilated Cardiomyopathy)", "Enlarged Liver",
+				"Enlarged Spleen", "Enlargement of Esophagus", "Estrus Symptoms after Spaying", "Ethanol Poisoning",
 				"Excess Acidity in the Blood", "Excess Alkali in the Blood", "Excess Blood Cells in the Eye",
 				"Excess Calcium in the Blood", "Excess Carbon Dioxide in the Blood", "Excess Chloride in the Blood",
 				"Excess Iron in the Blood", "Excess Magnesium in the Blood", "Excess Phosphorous in the Blood",
@@ -289,21 +287,16 @@ public class Helper {
 				"Hernia Between the Pericardium and Peritoneum", "High Blood Pressure",
 				"High Blood Pressure in the Lungs", "High Blood Pressure in the Portal Vein to the Liver",
 				"High Blood Sugar", "High Cholesterol", "High Level of Plasma Proteins in the Blood of ",
-				"High Levels of Blood Nitrogen", "Hip Dysplasia", "Hives: Causes", "Hole in the Trachea", "Hookworms",
-				"Hormone Replacement Poisoning", "House Soiling (Marking) by ",
-				"How Do Pest Control Products Get Rid of Fleas?", "How to Get Rid of Ear Mites",
-				"How to Treat Breathing Difficulties", "How to Treat Chronic Renal Failure",
-				"How to Treat Cushings Disease", "How to Treat Ear Mites", "How to Treat Heartworms",
-				"How to Treat Hematuria", "How to Treat Mucus Stool", "How to Treat Parvo",
-				"Hypercalcemic Agent Poisoning", "Hyperparathyroidism Due to Kidney Failure", "Hyperparathyroidism",
-				"Hyperthyroidism", "Hypothyroidism", "Ibuprofen Toxicity", "Identifying and Treating Tapeworms",
-				"Inability to Protrude or Retract Penis", "Inability to Urinate", "Incoordination of the Legs",
-				"Increased Appetite", "Increased Heart Rate Due to Premature Contractions",
-				"Increased Urination and Thirst", "Infertility in Female ", "Infertility in Male ",
-				"Inflamed Chewing Muscles and Eye Muscles", "Inflammation of Body Blood Vessels",
-				"Inflammation of the Abdomen Due to Bile Leakage", "Inflammation of the Esophagus",
-				"Inflammation of the Middle Ear and External Ear Canal", "Inflammation of the Pancreas",
-				"Inflammation of the Skin Blood Vessels", "Inflammation of the Skin",
+				"High Levels of Blood Nitrogen", "Hip Dysplasia", "Hives", "Hole in the Trachea", "Hookworms",
+				"Hormone Replacement Poisoning", "House Soiling (Marking) by ", "Hypercalcemic Agent Poisoning",
+				"Hyperparathyroidism Due to Kidney Failure", "Hyperparathyroidism", "Hyperthyroidism", "Hypothyroidism",
+				"Ibuprofen Toxicity", "Identifying and Treating Tapeworms", "Inability to Protrude or Retract Penis",
+				"Inability to Urinate", "Incoordination of the Legs", "Increased Appetite",
+				"Increased Heart Rate Due to Premature Contractions", "Increased Urination and Thirst",
+				"Infertility in Female ", "Infertility in Male ", "Inflamed Chewing Muscles and Eye Muscles",
+				"Inflammation of Body Blood Vessels", "Inflammation of the Abdomen Due to Bile Leakage",
+				"Inflammation of the Esophagus", "Inflammation of the Middle Ear and External Ear Canal",
+				"Inflammation of the Pancreas", "Inflammation of the Skin Blood Vessels", "Inflammation of the Skin",
 				"Inflammation of the Soft Tissues in the Mouth", "Inflammation of the Superficial Veins",
 				"Inflammatory Bowel Disease (IBD)", "Inflammatory Bowel Disease Due to Lymphocytes and Plasma",
 				"Inflammatory Bowel Disease", "Inflammatory Skin Disease", "Ingestion of Feces and Foreign Objects",
@@ -427,7 +420,7 @@ public class Helper {
 				"Tongue Cancer (Squamous Cell Carcinoma)", "Tonsil Cancer (Squamous Cell Carcinoma)",
 				"Too much Acid in the Body", "Tooth Dislocation or Sudden Loss", "Tooth Enamel Malformation",
 				"Tooth Fracture", "Torn Knee Ligament", "Toxicity from Gum", "Toxoplasmosis",
-				"Transitional Cell Carcinoma of the Urinary Tract", "Tremors and Seizures: Causes", "Tumor of the Eye",
+				"Transitional Cell Carcinoma of the Urinary Tract", "Tremors and Seizures", "Tumor of the Eye",
 				"Tumor of the Meninges", "Tumor of the Nerves", "Tumor of the Thymus", "Tumor of the Uterus",
 				"Tumor Related to Vaccinations", "Tumors of the Endocrine Glands", "Tumors of the Gums (Epulis)",
 				"Tumors of the Vagina", "Twisted Spleen", "Tylenol (Acetaminophen) Poisoning", "Umbilical Hernia",
@@ -461,12 +454,12 @@ public class Helper {
 				"Anxiety and Compulsive Disorders", "Are Lilies Poisonous to ?",
 				"Are Onions and Garlic Bad For Your Dog?", "Arrhythmias after Blunt Heart Trauma", "Arsenic Poisoning",
 				"Artery Inflammation", "Arthritis (Septic)", "Arthritis of Multiple Joints", "Aspirin Poisoning",
-				"Atopic Dermatitis: Causes", "Bacterial Infection (Actinomycosis)",
-				"Bacterial Infection (Campylobacteriosis)", "Bacterial Infection (Leptospirosis)",
-				"Bacterial Infection (Metritis) of the Uterus", "Bacterial Infection (Mycoplasma",
-				"Bacterial Infection (Nocardiosis)", "Bacterial Infection (Pyelonephritis) of the Kidneys",
-				"Bacterial Infection (Streptococcus)", "Bacterial Infection (Tularemia)",
-				"Bacterial Infection (Tyzzer Disease)", "Bacterial Infection of the Breast", "Bad Breath (Chronic)",
+				"Atopic Dermatitis", "Bacterial Infection (Actinomycosis)", "Bacterial Infection (Campylobacteriosis)",
+				"Bacterial Infection (Leptospirosis)", "Bacterial Infection (Metritis) of the Uterus",
+				"Bacterial Infection (Mycoplasma", "Bacterial Infection (Nocardiosis)",
+				"Bacterial Infection (Pyelonephritis) of the Kidneys", "Bacterial Infection (Streptococcus)",
+				"Bacterial Infection (Tularemia)", "Bacterial Infection (Tyzzer Disease)",
+				"Bacterial Infection of the Breast", "Bad Breath (Chronic)",
 				"Baldness and Hormone-Related Skin Disorders", "Bartonella Infection", "Bile Duct Cancer",
 				"Bile Duct Obstruction", "Birth Difficulties", "Black Widow Spider Bite Poisoning", "Black",
 				"Bladder Inflammation with Polyps", "Bleeding Disorder", "Bleeding of the Retina in the Eye",
@@ -488,20 +481,19 @@ public class Helper {
 				"Can  Get High? The Dangerous Effects of Marijuana on ", "Can  Have Panic Attacks?",
 				"Can Grass Kill Your Dog?", "Cancer of the Blood Vessel Cells",
 				"Cancerous and Non-Cancerous Growths in a  Mouth", "Cancerous Lymphoid Cells in the Lungs of ",
-				"Canine Coronavirus Infection", "Canine Herpesvirus Causes", "Capillariasis",
-				"Carbon Monoxide Poisoning", "Carcinoid Cancer", "Cardiac Arrest", "Cardiac Electrical Failure",
-				"Cardiomyopathy in Boxer ", "Carnitine Deficiency", "Cataracts", "Cavities", "Chagas Disease",
-				"Chemical Imbalance of Urine", "Chest Bone Deformity", "Chocolate Poisoning",
-				"Chronic Inflammation of the Anus", "Chronic Inflammation of the Bronchi", "Chronic Vomiting",
-				"Cirrhosis and Fibrosis of the Liver", "Claw and Nail Disorders", "Cleft Palate",
-				"Clotting Deficiency (Inherited)", "Clotting Deficiency (Liver Related)",
-				"Clotting Disorders of the Platelets", "Collapse During Exercise in Labrador Retrievers",
-				"Collapse of the Wind Pipe", "Collection of Fluid in the Lungs (Not Due to Heart Disease)",
-				"Collie Eye Defect", "Colonic or Rectal Inflammation", "Colonic Ulcer",
-				"Conditions Due to Abnormal Secretions from a Tumor", "Congenital Heart Defect (Atrial Septal Defect)",
-				"Congenital Heart Defect (Ebstein’s Anomaly)", "Congenital Heart Defect (Pulmonic Stenosis)",
-				"Conjunctivitis (Pink Eye)", "Constipation (Severe)", "Constipation", "Coonhound Paralysis",
-				"Coral Snake Bite Poisoning", "Corneal Disease (Inherited)",
+				"Canine Coronavirus Infection", "Canine Herpesvirus", "Capillariasis", "Carbon Monoxide Poisoning",
+				"Carcinoid Cancer", "Cardiac Arrest", "Cardiac Electrical Failure", "Cardiomyopathy in Boxer ",
+				"Carnitine Deficiency", "Cataracts", "Cavities", "Chagas Disease", "Chemical Imbalance of Urine",
+				"Chest Bone Deformity", "Chocolate Poisoning", "Chronic Inflammation of the Anus",
+				"Chronic Inflammation of the Bronchi", "Chronic Vomiting", "Cirrhosis and Fibrosis of the Liver",
+				"Claw and Nail Disorders", "Cleft Palate", "Clotting Deficiency (Inherited)",
+				"Clotting Deficiency (Liver Related)", "Clotting Disorders of the Platelets",
+				"Collapse During Exercise in Labrador Retrievers", "Collapse of the Wind Pipe",
+				"Collection of Fluid in the Lungs (Not Due to Heart Disease)", "Collie Eye Defect",
+				"Colonic or Rectal Inflammation", "Colonic Ulcer", "Conditions Due to Abnormal Secretions from a Tumor",
+				"Congenital Heart Defect (Atrial Septal Defect)", "Congenital Heart Defect (Ebstein’s Anomaly)",
+				"Congenital Heart Defect (Pulmonic Stenosis)", "Conjunctivitis (Pink Eye)", "Constipation (Severe)",
+				"Constipation", "Coonhound Paralysis", "Coral Snake Bite Poisoning", "Corneal Disease (Inherited)",
 				"Corneal Inflammation (Nonulcerative Keratitis)", "Coughing", "Cushings Disease", "Cyst on the Gums",
 				"Defect of the Ventricular Septum", "Degeneration of the Cerebellum of the Brain",
 				"Degeneration of the Cornea", "Degeneration of the Image Forming Part of the Eye",
@@ -619,6 +611,7 @@ public class Helper {
 
 	}
 
+	// Function to List staff by specific Category
 	public void listStaffByCategory(int option, String staff) {
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee categorie : employees) {
@@ -629,5 +622,17 @@ public class Helper {
 				System.out.println("|> Salary Level: " + categorie.getSalaryLevel());
 			}
 		}
+	}
+
+	// Function to List all Animals
+	public void listAllAnimals() {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~ANIMAL-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Animal animal : animals) {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("|> " + animal.getName() + " - " + animal.getClass().getSimpleName());
+			System.out.println("|> PET Age: " + animal.getAge());
+			System.out.println("|> Medical Condition: " + animal.getMedicalCondition());
+		}
+
 	}
 }
