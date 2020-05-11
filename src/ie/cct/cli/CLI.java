@@ -226,6 +226,8 @@ public class CLI {
 		// Output for user
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~TREATMENT-MENU~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - List All Animals from an Veterinarian <<<");
+		System.out.println("     >>>     2 - Treatment Order List by Veterinarian  <<<");
+		System.out.println("     >>>     3 - Treat an Animal by Veterinarian       <<<");
 		System.out.println("     >>>     0 - <<< BACK                   <<<");
 
 		// Try catch block to check if the input from user is valid
@@ -242,6 +244,14 @@ public class CLI {
 		switch (option) {
 		case 1:
 			helper.listAnimalsFromVet();
+			treatmentMenu(helper);
+			break;
+		case 2:
+			helper.listAnimalsFromVet();
+			treatmentMenu(helper);
+			break;
+		case 3:
+			helper.treatAnimal();
 			treatmentMenu(helper);
 			break;
 		case 0:

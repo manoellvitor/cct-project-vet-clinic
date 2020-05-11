@@ -3,6 +3,7 @@ package ie.cct.controller;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ConcurrentModificationException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -868,6 +869,50 @@ public class Helper {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		String vetName = null;
+		int positionQueue = 0;
+
+		// Output, list all the VET and show just the names
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~VET-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Employee staff : employees) {
+			if (staff.getClass().getSimpleName().equals("Veterinarian")) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> " + staff.getName());
+			}
+		}
+
+		// try catch to get the name from the user
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Veterinarian Name:_ ");
+			vetName = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("#~~~~~~~~~~~~~~~~~~FOUNDED-ANIMALS~~~~~~~~~~~~~~~~~~~~#");
+		for (Treatment animalToTreat : treatments) {
+			// for each reading all the array again , and if the name matches it print (if
+			// the name repeats it print as many times it repeat)
+
+			if (vetName.equals(animalToTreat.getVet().getName())) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> PET Name: " + animalToTreat.getAnimalToHeal().getName());
+				System.out.println("|> PET Age: " + animalToTreat.getAnimalToHeal().getAge());
+				System.out.println("|> PET Condition: " + animalToTreat.getAnimalToHeal().getMedicalCondition());
+				System.out.println("|> PET Position in the QUEUE: " + positionQueue);
+			}
+			positionQueue++;
+		}
+	}
+
+	// Function to Treat Animals and remove them from the List
+	public void treatAnimal() {
+		// BufferedReader to receive data from the user Keyboard
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		String vetName = null;
+		String petName = null;
 
 		// Output, list all the VET and show just the names
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~VET-LIST~~~~~~~~~~~~~~~~~~~~~~#");
@@ -899,7 +944,29 @@ public class Helper {
 				System.out.println("|> PET Age: " + animalToTreat.getAnimalToHeal().getAge());
 				System.out.println("|> PET Condition: " + animalToTreat.getAnimalToHeal().getMedicalCondition());
 			}
-
 		}
+
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Animal Name:_ ");
+			petName = reader.readLine();
+		} catch (IOException | ConcurrentModificationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		for (Treatment animalToTreat : treatments) {
+			// for each reading all the array again , and if the name matches it remove the
+			// animal from the list
+
+			if (petName.equals(animalToTreat.getAnimalToHeal().getName())) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> PET Name: " + animalToTreat.getAnimalToHeal().getName());
+				System.out.println("|> Sucessfully Treated!");
+				// where i remove the related animal
+				treatments.remove(animalToTreat);
+			}
+		}
+
 	}
 }
