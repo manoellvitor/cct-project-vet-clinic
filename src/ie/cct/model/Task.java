@@ -8,6 +8,7 @@ package ie.cct.model;
  *
  */
 public class Task {
+	// Attributes
 	protected Employee staff;
 	protected String task;
 
