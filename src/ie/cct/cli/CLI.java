@@ -224,14 +224,14 @@ public class CLI {
 	// Treatment Menu
 	private void treatmentMenu(Helper helper) {
 		// Output for user
-		System.out.println("#~~~~~~~~~~~~~~~~~~~~~TREATMENT-MENU~~~~~~~~~~~~~~~~~~~~~#");
-		System.out.println("     >>>     1 - List All Animals from an Veterinarian             <<<");
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~TREATMENT-MENU~~~~~~~~~~~~~~~~~~~#");
+		System.out.println("     >>>     1 - List All Animals from an Veterinarian <<<");
 		System.out.println("     >>>     0 - <<< BACK                   <<<");
 
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
 		try {
-			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 			System.out.print("|> Enter the Option Number:_ ");
 			option = Integer.parseInt(reader.readLine());
 		} catch (IOException | NumberFormatException e1) {
@@ -245,7 +245,7 @@ public class CLI {
 			treatmentMenu(helper);
 			break;
 		case 0:
-			treatmentMenu(helper);
+			mainMenu(helper);
 			break;
 		default:
 			System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -293,7 +293,14 @@ public class CLI {
 			helper.assignTreatment();
 			break;
 		case 0:
-			System.out.println("Thank you for use our System.");
+			System.out.println(
+					"########  ##    ## ########        ######## ##     ##    ###    ##    ## ##    ##    ##    ##  #######  ##     ## \n"
+							+ "##     ##  ##  ##  ##                 ##    ##     ##   ## ##   ###   ## ##   ##      ##  ##  ##     ## ##     ## \n"
+							+ "##     ##   ####   ##                 ##    ##     ##  ##   ##  ####  ## ##  ##        ####   ##     ## ##     ## \n"
+							+ "########     ##    ######             ##    ######### ##     ## ## ## ## #####          ##    ##     ## ##     ## \n"
+							+ "##     ##    ##    ##                 ##    ##     ## ######### ##  #### ##  ##         ##    ##     ## ##     ## \n"
+							+ "##     ##    ##    ##       ###       ##    ##     ## ##     ## ##   ### ##   ##        ##    ##     ## ##     ## \n"
+							+ "########     ##    ######## ###       ##    ##     ## ##     ## ##    ## ##    ##       ##     #######   #######  ");
 			return;
 		default:
 			System.out.println("Invalid option, enter a valid NUMBER option!");
