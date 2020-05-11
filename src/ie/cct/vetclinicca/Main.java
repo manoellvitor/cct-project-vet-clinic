@@ -10,7 +10,7 @@ import ie.cct.controller.Helper;
  *
  */
 
-public class VetClinicSystem {
+public class Main {
 	public static void main(String[] args) {
 
 		new Helper();

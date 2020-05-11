@@ -274,6 +274,9 @@ public class CLI {
 		case 0:
 			mainMenu(helper);
 			break;
+		default:
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			mainMenu(helper);
 		}
 
 	}
