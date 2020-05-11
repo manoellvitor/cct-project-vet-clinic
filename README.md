@@ -43,7 +43,7 @@ been looked after, the doctor needs to know who is the next one.
 by you, but there should be several different tasks – e.g. Filing, Making Phone Calls, On Holidays, etc. 
 
 ### The user should be able to:
-## BASIC FUNCTIONALITY (Required to achieve a pass / merit)
+## BASIC FUNCTIONALITY
 - List all staff ✔
 - List staff by categories (e.g. list all Nurses) ✔
 - List all Admin staff performing a certain task ✔
@@ -52,7 +52,7 @@ by you, but there should be several different tasks – e.g. Filing, Making Phon
 - List animals by various types (e.g. list all dogs) ✔
 - Search for a specific animal by name ✔
 
-## ADDITIONAL FUNCTIONALITY (Required to achieve a Distinction)
+## ADDITIONAL FUNCTIONALITY
 
 - List all the animals assigned to a member of medical staff
 - List the order in which pets will be looked after by a particular member of the medical
