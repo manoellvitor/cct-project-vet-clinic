@@ -633,6 +633,18 @@ public class Helper {
 			System.out.println("|> PET Age: " + animal.getAge());
 			System.out.println("|> Medical Condition: " + animal.getMedicalCondition());
 		}
+	}
 
+	// Function to List animal by specific Kind
+	public void listAnimalByKind(int option, String kind) {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~ANIMAL-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Animal animal : animals) {
+			if (animal.getClass().getSimpleName().equals(kind)) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> " + animal.getName() + " - " + animal.getClass().getSimpleName());
+				System.out.println("|> PET Age: " + animal.getAge());
+				System.out.println("|> Medical Condition: " + animal.getMedicalCondition());
+			}
+		}
 	}
 }

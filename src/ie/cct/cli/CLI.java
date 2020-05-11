@@ -122,11 +122,17 @@ public class CLI {
 
 	// Staff Menu
 	private void animalMenu(Helper helper) {
+		// Variables of kind ANIMALS
+		String dog = "Dog";
+		String cat = "Cat";
+		String bir = "Bird";
+		String hor = "Horse";
+		String rab = "Rabbit";
 
 		// Output for user
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~ANIMAL MENU~~~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - List All Animals             <<<");
-		System.out.println("     >>>     2 - List Staff by Categories   <<<");
+		System.out.println("     >>>     2 - List Animal by Kind          <<<");
 		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
 		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
 		System.out.println("     >>>     0 - <<< BACK                   <<<");
@@ -148,12 +154,12 @@ public class CLI {
 		case 2:
 			// Output for user
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~CATEGORIES~~~~~~~~~~~~~~~~~~~~~#");
-			System.out.println("     >>>     1 - Veterinarian             <<<");
-			System.out.println("     >>>     2 - Nurse                    <<<");
-			System.out.println("     >>>     3 - Trainee Vet              <<<");
-			System.out.println("     >>>     4 - IT Specialist            <<<");
-			System.out.println("     >>>     5 - Receptionist             <<<");
-			System.out.println("     >>>     0 - <<< BACK                 <<<");
+			System.out.println("     >>>     1 - Dog             <<<");
+			System.out.println("     >>>     2 - Cat             <<<");
+			System.out.println("     >>>     3 - Bird            <<<");
+			System.out.println("     >>>     4 - Horse           <<<");
+			System.out.println("     >>>     5 - Rabbit          <<<");
+			System.out.println("     >>>     0 - <<< BACK        <<<");
 
 			// Try catch block to check if the input from user is valid
 			// if it is it pass, if not it throws an exception and return to the menu
@@ -163,7 +169,31 @@ public class CLI {
 				System.out.println("Invalid option, enter a valid NUMBER option!");
 				animalMenu(helper);
 			}
-
+			switch (option) {
+			case 1:
+				helper.listAnimalByKind(option, dog);
+				animalMenu(helper);
+				break;
+			case 2:
+				helper.listAnimalByKind(option, cat);
+				animalMenu(helper);
+				break;
+			case 3:
+				helper.listAnimalByKind(option, bir);
+				animalMenu(helper);
+				break;
+			case 4:
+				helper.listAnimalByKind(option, hor);
+				animalMenu(helper);
+				break;
+			case 5:
+				helper.listAnimalByKind(option, rab);
+				animalMenu(helper);
+				break;
+			default:
+				animalMenu(helper);
+				break;
+			}
 		case 0:
 			mainMenu(helper);
 			break;
