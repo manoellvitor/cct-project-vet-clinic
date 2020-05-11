@@ -601,6 +601,8 @@ public class Helper {
 
 	// Function to generate the staff members
 	public void startStaffMembers() {
+		// For loop to generate specific number of each type of Staff
+		// If more staff needed just have to increase the value
 		for (int i = 0; i < 5; i++) {
 			employees.add(new ITSpecialist(staffNameGenerator(), 100));
 		}
@@ -624,6 +626,9 @@ public class Helper {
 
 	// Function to give some random tasks
 	public void giveTask() {
+		// For each going into the employees list and checking by the object name
+		// if its matches one of the Admin Staff it add to a task list passing the
+		// member and the task
 		for (Employee admStaff : employees) {
 			if (admStaff.getClass().getSimpleName().equals("ITSpecialist")
 					|| admStaff.getClass().getSimpleName().equals("Receptionist")) {
@@ -634,6 +639,7 @@ public class Helper {
 
 	// Function to List all Staff Members
 	public void listAllStaffMembers() {
+		// Simple go into the employees array , and print all staff members
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee staff : employees) {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
@@ -646,6 +652,8 @@ public class Helper {
 
 	// Function to List staff by specific Category
 	public void listStaffByCategory(int option, String staff) {
+		// Go into the employees list and if it matches the selected category it prints
+		// it
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee categorie : employees) {
 			if (categorie.getClass().getSimpleName().equals(staff)) {
