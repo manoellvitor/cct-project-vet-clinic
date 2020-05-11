@@ -44,13 +44,13 @@ by you, but there should be several different tasks – e.g. Filing, Making Phon
 
 ### The user should be able to:
 ## BASIC FUNCTIONALITY (Required to achieve a pass / merit)
-- List all staff
-- List staff by categories (e.g. list all Nurses)
-- List all Admin staff performing a certain task
-- Search for a specific member of staff by name
-- List all animals
-- List animals by various types (e.g. list all dogs)
-- Search for a specific animal by name
+- List all staff ✔
+- List staff by categories (e.g. list all Nurses) ✔
+- List all Admin staff performing a certain task ✔
+- Search for a specific member of staff by name ✔
+- List all animals ✔
+- List animals by various types (e.g. list all dogs) ✔
+- Search for a specific animal by name ✔
 
 ## ADDITIONAL FUNCTIONALITY (Required to achieve a Distinction)
 
