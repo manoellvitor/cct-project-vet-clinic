@@ -45,8 +45,8 @@ public class CLI {
 		// Output for user
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~STAFF MENU~~~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - List All Staff             <<<");
-		System.out.println("     >>>     2 - List Staff by Categories   <<<");
-		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
+		System.out.println("     >>>     2 - List Staff by Category     <<<");
+		System.out.println("     >>>     3 - List Staff by Name         <<<");
 		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
 		System.out.println("     >>>     0 - <<< BACK                   <<<");
 
@@ -110,7 +110,9 @@ public class CLI {
 			default:
 				break;
 			}
-			break;
+		case 3:
+			helper.listStaffByName();
+			staffMenu(helper);
 		case 0:
 			mainMenu(helper);
 			break;

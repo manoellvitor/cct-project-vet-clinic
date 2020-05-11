@@ -1,5 +1,8 @@
 package ie.cct.controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -645,6 +648,38 @@ public class Helper {
 				System.out.println("|> PET Age: " + animal.getAge());
 				System.out.println("|> Medical Condition: " + animal.getMedicalCondition());
 			}
+		}
+	}
+
+	public void listStaffByName() {
+		// BufferedReader to receive data from the user Keyboard
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		String staffName = null;
+
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~NAMES-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Employee staff : employees) {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("|> " + staff.getName());
+		}
+
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the Staff Name:_ ");
+			staffName = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		for (Employee staff : employees) {
+			if (staffName.equals(staff.getName())) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~FOUNDED-STAFF~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> " + staff.getName() + " - " + staff.getClass().getSimpleName());
+				System.out.println("|> Staff-Number: " + staff.getStaffNumber());
+				System.out.println("|> Salary Level: " + staff.getSalaryLevel());
+			}
+
 		}
 	}
 }
