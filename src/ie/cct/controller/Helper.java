@@ -619,7 +619,15 @@ public class Helper {
 
 	}
 
-	public void listStaffByCategory() {
-
+	public void listStaffByCategory(int option, String staff) {
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~STAFF-LIST~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Employee categorie : employees) {
+			if (categorie.getClass().getSimpleName().equals(staff)) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> " + categorie.getName() + " - " + categorie.getClass().getSimpleName());
+				System.out.println("|> Staff-Number: " + categorie.getStaffNumber());
+				System.out.println("|> Salary Level: " + categorie.getSalaryLevel());
+			}
+		}
 	}
 }

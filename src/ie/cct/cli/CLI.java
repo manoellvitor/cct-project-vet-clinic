@@ -1,5 +1,8 @@
 package ie.cct.cli;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -18,6 +21,9 @@ public class CLI {
 	// Scanner to receive data from the user Keyboard
 	Scanner input = new Scanner(System.in);
 
+	// BufferedReader to receive data from the user Keyboard
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
 	// Variable to simple keep the user option
 	int option = 0;
 
@@ -29,14 +35,29 @@ public class CLI {
 
 	// Staff Menu
 	private void staffMenu(Helper helper) {
+		// Variables of types of STAFF
+		String vet = "Veterinarian";
+		String nur = "Nurse";
+		String trave = "TraineeVet";
+		String its = "ITSpecialist";
+		String recp = "Receptionist";
+
+		// Output for user
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~STAFF MENU~~~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - List All Staff             <<<");
 		System.out.println("     >>>     2 - List Staff by Categories   <<<");
 		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
 		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
-		System.out.println("     >>>     5 - Back to Menu               <<<");
-		System.out.println("     >>>     0 - EXIT                       <<<");
-		option = input.nextInt();
+		System.out.println("     >>>     0 - <<< BACK                   <<<");
+
+		// Try catch block to check if the input from user is valid
+		// if it is it pass, if not it throws an exception and return to the menu
+		try {
+			option = Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e1) {
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			mainMenu(helper);
+		}
 
 		switch (option) {
 		case 1:
@@ -44,18 +65,64 @@ public class CLI {
 			staffMenu(helper);
 			break;
 		case 2:
-			helper.listStaffByCategory();
+			// Output for user
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~CATEGORIES~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("     >>>     1 - Veterinarian             <<<");
+			System.out.println("     >>>     2 - Nurse                    <<<");
+			System.out.println("     >>>     3 - Trainee Vet              <<<");
+			System.out.println("     >>>     4 - IT Specialist            <<<");
+			System.out.println("     >>>     5 - Receptionist             <<<");
+			System.out.println("     >>>     0 - <<< BACK                 <<<");
+
+			// Try catch block to check if the input from user is valid
+			// if it is it pass, if not it throws an exception and return to the menu
+			try {
+				option = Integer.parseInt(reader.readLine());
+			} catch (IOException | NumberFormatException e1) {
+				System.out.println("Invalid option, enter a valid NUMBER option!");
+				mainMenu(helper);
+			}
+
+			switch (option) {
+			case 1:
+				helper.listStaffByCategory(option, vet);
+				staffMenu(helper);
+				break;
+			case 2:
+				helper.listStaffByCategory(option, nur);
+				staffMenu(helper);
+				break;
+			case 3:
+				helper.listStaffByCategory(option, trave);
+				staffMenu(helper);
+				break;
+			case 4:
+				helper.listStaffByCategory(option, its);
+				staffMenu(helper);
+				break;
+			case 5:
+				helper.listStaffByCategory(option, recp);
+				staffMenu(helper);
+				break;
+			case 0:
+				staffMenu(helper);
+				break;
+			default:
+				break;
+			}
 			break;
-		case 3:
+		case 0:
+			mainMenu(helper);
 			break;
 		default:
-			break;
+			System.out.println("Invalid Option, Try Again!");
+			staffMenu(helper);
 		}
 	}
 
 	// Function to show a nice message to the user
 	public void welcome(Helper helper) {
-
+		// Output for user
 		System.out.println("#-----------------------------------------------------#");
 		System.out.println("|                 VET CLINIC SYSTEMS                  |");
 		System.out.println("#-----------------------------------------------------#");
@@ -65,10 +132,18 @@ public class CLI {
 
 	// Main Menu to start the clinic
 	private void mainMenu(Helper helper) {
-
+		// Output for user
 		System.out.println("     >>>     1 - For Open the Clinic     <<<");
 		System.out.println("     >>>     0 - TO EXIT                 <<<");
-		option = input.nextInt();
+
+		// Try catch block to check if the input from user is valid
+		// if it is it pass, if not it throws an exception and return to the menu
+		try {
+			option = Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e1) {
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			mainMenu(helper);
+		}
 
 		switch (option) {
 		case 1:
@@ -78,8 +153,12 @@ public class CLI {
 		case 0:
 			System.out.println("Thank you for use our System.");
 			return;
+		default:
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			mainMenu(helper);
 		}
 
+		// Output for user
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Date date = new Date();
 		System.out.println("#     Wellcome, today is:  " + formatter.format(date) + "        #");
@@ -87,7 +166,15 @@ public class CLI {
 		System.out.println("     >>>     1 - Staff Menu     <<<");
 		System.out.println("     >>>     2 - Animals Menu   <<<");
 		System.out.println("     >>>     0 - << BACK        <<<");
-		option = input.nextInt();
+
+		// Try catch block to check if the input from user is valid
+		// if it is it pass, if not it throws an exception and return to the menu
+		try {
+			option = Integer.parseInt(reader.readLine());
+		} catch (IOException | NumberFormatException e1) {
+			System.out.println("Invalid option, enter a valid NUMBER option!");
+			mainMenu(helper);
+		}
 
 		switch (option) {
 		case 1:
@@ -100,6 +187,7 @@ public class CLI {
 			mainMenu(helper);
 			break;
 		}
+
 	}
 
 }
