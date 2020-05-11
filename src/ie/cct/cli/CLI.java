@@ -47,7 +47,7 @@ public class CLI {
 		System.out.println("     >>>     1 - List All Staff             <<<");
 		System.out.println("     >>>     2 - List Staff by Category     <<<");
 		System.out.println("     >>>     3 - List Staff by Name         <<<");
-		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
+		System.out.println("     >>>     4 - List Staff by Task         <<<");
 		System.out.println("     >>>     0 - <<< BACK                   <<<");
 
 		// Try catch block to check if the input from user is valid
@@ -135,9 +135,8 @@ public class CLI {
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~~ANIMAL MENU~~~~~~~~~~~~~~~~~~~~~#");
 		System.out.println("     >>>     1 - List All Animals             <<<");
 		System.out.println("     >>>     2 - List Animal by Kind          <<<");
-		System.out.println("     >>>     3 - List All Admin staff performing a certain task      <<<");
-		System.out.println("     >>>     4 - Search for a specific member of staff by name       <<<");
-		System.out.println("     >>>     0 - <<< BACK                   <<<");
+		System.out.println("     >>>     3 - List Animal by Name          <<<");
+		System.out.println("     >>>     0 - <<< BACK                     <<<");
 
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
@@ -196,6 +195,10 @@ public class CLI {
 				animalMenu(helper);
 				break;
 			}
+		case 3:
+			helper.listAnimalByName();
+			animalMenu(helper);
+			break;
 		case 0:
 			mainMenu(helper);
 			break;

@@ -651,18 +651,21 @@ public class Helper {
 		}
 	}
 
+	// Function to List Staff by specific Name
 	public void listStaffByName() {
 		// BufferedReader to receive data from the user Keyboard
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		String staffName = null;
 
+		// Output, list all the staff and show just the names
 		System.out.println("#~~~~~~~~~~~~~~~~~~~~~NAMES-LIST~~~~~~~~~~~~~~~~~~~~~~#");
 		for (Employee staff : employees) {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 			System.out.println("|> " + staff.getName());
 		}
 
+		// try catch to get the name from the user
 		try {
 			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
 			System.out.print("|> Enter the Staff Name:_ ");
@@ -673,6 +676,8 @@ public class Helper {
 		}
 
 		for (Employee staff : employees) {
+			// for each reading all the array again , and if the name matches it print (if
+			// the name repeats it print as many times it repeat)
 			if (staffName.equals(staff.getName())) {
 				System.out.println("#~~~~~~~~~~~~~~~~~~~FOUNDED-STAFF~~~~~~~~~~~~~~~~~~~~~#");
 				System.out.println("|> " + staff.getName() + " - " + staff.getClass().getSimpleName());
@@ -681,5 +686,42 @@ public class Helper {
 			}
 
 		}
+	}
+
+	public void listAnimalByName() {
+		// BufferedReader to receive data from the user Keyboard
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		String animalName = null;
+
+		// Output, list all the staff and show just the names
+		System.out.println("#~~~~~~~~~~~~~~~~~~~~~PET-NAMES~~~~~~~~~~~~~~~~~~~~~~#");
+		for (Animal animal : animals) {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.println("|> " + animal.getName());
+		}
+
+		// try catch to get the name from the user
+		try {
+			System.out.println("#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#");
+			System.out.print("|> Enter the PET Name:_ ");
+			animalName = reader.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		for (Animal animal : animals) {
+			// for each reading all the array again , and if the name matches it print (if
+			// the name repeats it print as many times it repeat)
+			if (animalName.equals(animal.getName())) {
+				System.out.println("#~~~~~~~~~~~~~~~~~~~FOUNDED-PET~~~~~~~~~~~~~~~~~~~~~#");
+				System.out.println("|> " + animal.getName() + " - " + animal.getClass().getSimpleName());
+				System.out.println("|> PET Age: " + animal.getAge());
+				System.out.println("|> Medical Condition: " + animal.getMedicalCondition());
+			}
+
+		}
+
 	}
 }
