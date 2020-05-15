@@ -123,7 +123,7 @@ public class CLI {
 			staffMenu(helper);
 			break;
 		case 0:
-			mainMenu(helper);
+			secondaryMenu(helper);
 			break;
 		default:
 			System.out.println("Invalid Option, Try Again!");
@@ -213,7 +213,7 @@ public class CLI {
 			animalMenu(helper);
 			break;
 		case 0:
-			mainMenu(helper);
+			secondaryMenu(helper);
 			break;
 		default:
 			System.out.println("Invalid Option, Try Again!");
@@ -255,7 +255,7 @@ public class CLI {
 			treatmentMenu(helper);
 			break;
 		case 0:
-			mainMenu(helper);
+			secondaryMenu(helper);
 			break;
 		default:
 			System.out.println("Invalid option, enter a valid NUMBER option!");
@@ -265,7 +265,7 @@ public class CLI {
 	}
 
 	// Function to show a nice message to the user
-	public void welcome(Helper helper) {
+	private void welcome(Helper helper) {
 		// Output for user
 		System.out.println("#--------------------------------------------------------------------------#");
 		System.out.println(" __     __  _____   _____      ____   _       ___   _   _   ___    ____ \n"
@@ -303,6 +303,7 @@ public class CLI {
 			helper.startStaffMembers();
 			helper.giveTask();
 			helper.assignTreatment();
+			secondaryMenu(helper);
 			break;
 		case 0:
 			System.out.println(
@@ -319,6 +320,11 @@ public class CLI {
 			mainMenu(helper);
 		}
 
+	}
+
+	// Secondary Menu to separate functionalities
+	private void secondaryMenu(Helper helper) {
+
 		// Output for user
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Date date = new Date();
@@ -327,7 +333,7 @@ public class CLI {
 		System.out.println("     >>>     1 - Staff Menu     <<<");
 		System.out.println("     >>>     2 - Animals Menu   <<<");
 		System.out.println("     >>>     3 - Treatment Menu <<<");
-		System.out.println("     >>>     0 - << BACK        <<<");
+		System.out.println("     >>>     0 - << EXIT        <<<");
 
 		// Try catch block to check if the input from user is valid
 		// if it is it pass, if not it throws an exception and return to the menu
@@ -350,13 +356,19 @@ public class CLI {
 			treatmentMenu(helper);
 			break;
 		case 0:
-			mainMenu(helper);
-			break;
+			System.out.println(
+					"########  ##    ## ########        ######## ##     ##    ###    ##    ## ##    ##    ##    ##  #######  ##     ## \n"
+							+ "##     ##  ##  ##  ##                 ##    ##     ##   ## ##   ###   ## ##   ##      ##  ##  ##     ## ##     ## \n"
+							+ "##     ##   ####   ##                 ##    ##     ##  ##   ##  ####  ## ##  ##        ####   ##     ## ##     ## \n"
+							+ "########     ##    ######             ##    ######### ##     ## ## ## ## #####          ##    ##     ## ##     ## \n"
+							+ "##     ##    ##    ##                 ##    ##     ## ######### ##  #### ##  ##         ##    ##     ## ##     ## \n"
+							+ "##     ##    ##    ##       ###       ##    ##     ## ##     ## ##   ### ##   ##        ##    ##     ## ##     ## \n"
+							+ "########     ##    ######## ###       ##    ##     ## ##     ## ##    ## ##    ##       ##     #######   #######  ");
+			return;
 		default:
 			System.out.println("Invalid option, enter a valid NUMBER option!");
-			mainMenu(helper);
+			secondaryMenu(helper);
 		}
-
 	}
 
 }
