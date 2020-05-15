@@ -73,5 +73,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Basic UML
+
+<img src="https://i.imgur.com/m9R7vyD.png" title="VetClinicCA" alt="VetClinicCA">
+
 ## License
 [CCT - Dublin](https://www.cct.ie/)
